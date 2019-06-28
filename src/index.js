@@ -1,6 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Router, Link } from '@reach/router';
+import Blog from './Blog';
+import Home from './Home';
+import Dash from './Dash';
+import Form from './Form';
 
 const styles = {
   NavBar: {
@@ -42,19 +46,6 @@ const BotSec = () => {
       <div>something else</div>
     </div>
   );
-};
-
-const Home = () => {
-  return <div>home stuff goes here</div>;
-};
-const Blog = () => {
-  return <div>blog</div>;
-};
-const Form = () => {
-  return <div>form</div>;
-};
-const Dash = () => {
-  return <div>dashboard</div>;
 };
 
 const App = () => {
