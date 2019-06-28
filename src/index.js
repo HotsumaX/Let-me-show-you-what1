@@ -19,14 +19,19 @@ const styles = {
   BotSec: {
     backgroundColor: 'green',
     position: 'absolute',
-    left: 0,
     bottom: 0,
-    right: 0,
     height: 50,
     width: '90%',
     alignItems: 'center',
     marginLeft: '5%',
     minWidth: 500,
+  },
+  pageContainer: {
+    position: 'relative',
+    minHeight: '100vh',
+  },
+  contentWraper: {
+    paddingBottom: '2.5rem',
   },
 };
 const NavBar = () => {
@@ -50,16 +55,18 @@ const BotSec = () => {
 
 const App = () => {
   return (
-    <>
+    <div style={styles.pageContainer}>
       <NavBar />
-      <Router>
-        <Home path="/" />
-        <Blog path="/Blog" />
-        <Form path="/Form" />
-        <Dash path="/Dashboard" />
-      </Router>
-      <BotSec />
-    </>
+      <div style={styles.contentWraper}>
+        <Router>
+          <Home path="/" />
+          <Blog path="/Blog" />
+          <Form path="/Form" />
+          <Dash path="/Dashboard" />
+        </Router>
+        <BotSec />
+      </div>
+    </div>
   );
 };
 
