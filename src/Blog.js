@@ -1,4 +1,6 @@
-import React from 'react';
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+import React, { useState } from 'react';
 import faker from 'faker';
 import clock from './images/clock.svg';
 import ribbon from './images/star.svg';
@@ -33,9 +35,11 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     width: 80,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   image: {
-    height: 40,
+    height: 30,
   },
   font: {
     fontSize: 12,
@@ -47,6 +51,8 @@ const article = {
 };
 
 const Blog = () => {
+  const [imgColor, setImgColor] = useState(true);
+
   return (
     <div style={styles.outline}>
       individual blog post card
@@ -56,7 +62,12 @@ const Blog = () => {
           <br />
           <span style={styles.font}>{faker.random.number()} HR Ago</span>
           <br />
-          <img src={ribbon} alt="clock" style={styles.image} />
+          <img
+            src={imgColor ? ribbon : ribbonActive}
+            alt="clock"
+            style={styles.image}
+            onClick={() => setImgColor(!imgColor)}
+          />
           <span style={styles.font}>SAVE</span>
         </div>
         <img
