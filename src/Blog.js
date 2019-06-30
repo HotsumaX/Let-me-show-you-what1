@@ -1,6 +1,8 @@
 import React from 'react';
 import faker from 'faker';
 import clock from './images/clock.svg';
+import ribbon from './images/star.svg';
+import ribbonActive from './images/lace.svg';
 
 const styles = {
   outline: {
@@ -18,7 +20,8 @@ const styles = {
     backgroundColor: 'white',
     width: '50rem',
     marginLeft: 30,
-    height: 100,
+    height: 150,
+    display: 'flex',
   },
   post: {
     marginTop: 10,
@@ -29,9 +32,13 @@ const styles = {
   imageBox: {
     display: 'flex',
     flexDirection: 'column',
+    width: 80,
   },
   image: {
     height: 40,
+  },
+  font: {
+    fontSize: 12,
   },
 };
 
@@ -42,12 +49,21 @@ const article = {
 const Blog = () => {
   return (
     <div style={styles.outline}>
-      card
+      individual blog post card
       <div style={styles.card}>
         <div style={styles.imageBox}>
           <img src={clock} alt="clock" style={styles.image} />
-          <img src={clock} alt="clock" style={styles.image} />
+          <br />
+          <span style={styles.font}>{faker.random.number()} HR Ago</span>
+          <br />
+          <img src={ribbon} alt="clock" style={styles.image} />
+          <span style={styles.font}>SAVE</span>
         </div>
+        <img
+          src={faker.image.business()}
+          alt="blog post"
+          style={{ height: '80%' }}
+        />
       </div>
       blog post
       <div style={styles.post}>{article.Name}</div>
