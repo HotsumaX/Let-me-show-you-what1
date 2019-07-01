@@ -3,6 +3,7 @@
 import React from 'react';
 import faker from 'faker';
 import BlogCard from './BlogCard';
+import BlogMain from './BlogMain';
 
 const styles = {
   outline: {
@@ -16,24 +17,13 @@ const styles = {
     paddingTop: 50,
     paddingLeft: 30,
   },
-  post: {
-    marginTop: 10,
-    width: '50rem',
-    backgroundColor: 'white',
-    marginLeft: 30,
-  },
-};
-
-const article = {
-  Name: `${faker.name.firstName()} ${faker.name.lastName()}`,
 };
 
 const Blog = () => {
   return (
     <div style={styles.outline}>
       <BlogCard />
-      blog post
-      <div style={styles.post}>{article.Name}</div>
+      <BlogMain />
     </div>
   );
 };
