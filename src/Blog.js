@@ -34,15 +34,18 @@ const styles = {
   imageBox: {
     display: 'flex',
     flexDirection: 'column',
-    width: 80,
+    width: 60,
     alignItems: 'center',
     justifyContent: 'center',
   },
   image: {
-    height: 30,
+    height: 20,
   },
   font: {
-    fontSize: 12,
+    fontSize: 10,
+  },
+  title: {
+    color: '#2675B2',
   },
 };
 
@@ -60,7 +63,9 @@ const Blog = () => {
         <div style={styles.imageBox}>
           <img src={clock} alt="clock" style={styles.image} />
           <br />
-          <span style={styles.font}>{faker.random.number()} HR Ago</span>
+          <span style={styles.font}>
+            {faker.random.number({ min: 1, max: 25 })} HR Ago
+          </span>
           <br />
           <img
             src={imgColor ? ribbon : ribbonActive}
@@ -75,6 +80,12 @@ const Blog = () => {
           alt="blog post"
           style={{ height: '80%' }}
         />
+        <div>
+          <span style={styles.title}>{faker.random.words(2)}</span>
+          <br />
+          <div style={{ width: 500 }}>{faker.random.words(10)}</div>
+          <div>image author name vertival line comments</div>
+        </div>
       </div>
       blog post
       <div style={styles.post}>{article.Name}</div>
