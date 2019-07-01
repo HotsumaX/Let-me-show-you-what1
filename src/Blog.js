@@ -9,6 +9,7 @@ import ribbonActive from './images/lace.svg';
 const styles = {
   outline: {
     backgroundColor: '#2A79D3',
+    minWidth: '54em',
     width: '90%',
     marginLeft: '5%',
     display: 'flex',
@@ -37,6 +38,12 @@ const styles = {
     width: 60,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  infoBox: {
+    paddingLeft: 10,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-around',
   },
   image: {
     height: 20,
@@ -80,11 +87,32 @@ const Blog = () => {
           alt="blog post"
           style={{ height: '80%' }}
         />
-        <div>
+        <div style={styles.infoBox}>
           <span style={styles.title}>{faker.random.words(2)}</span>
-          <br />
-          <div style={{ width: 500 }}>{faker.random.words(10)}</div>
-          <div>image author name vertival line comments</div>
+          <div
+            style={{
+              width: 500,
+              paddingTop: 8,
+              paddingBottom: 5,
+              fontSize: 20,
+              fontWeight: 'bold',
+            }}
+          >
+            {faker.random.words(9)}
+          </div>
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+            }}
+          >
+            <img
+              src={faker.image.avatar()}
+              alt="avatar"
+              style={{ height: 35, borderRadius: 50, marginRight: 10 }}
+            />
+            {article.Name} vertival line comments
+          </div>
         </div>
       </div>
       blog post
