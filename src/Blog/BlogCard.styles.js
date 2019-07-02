@@ -4,7 +4,7 @@ const styles = {
     backgroundColor: 'white',
     width: '50rem',
     marginLeft: 30,
-    height: 150,
+    height: '10em',
     display: 'flex',
   },
   imageBox: {
@@ -35,6 +35,12 @@ const styles = {
     paddingBottom: 5,
     fontSize: 20,
     fontWeight: 'bold',
+  },
+  post: {
+    marginTop: 20,
+    width: '50rem',
+    backgroundColor: 'white',
+    marginLeft: 30,
   },
 };
 

@@ -14,34 +14,35 @@ const article = {
 
 const BlogCard = () => {
   const [imgColor, setImgColor] = useState(true);
+  const { card, imageBox, image, font, infoBox, articleTitle, title } = styles;
 
   return (
     <>
       individual blog post card
-      <div style={styles.card}>
-        <div style={styles.imageBox}>
-          <img src={clock} alt="clock" style={styles.image} />
+      <div style={card}>
+        <div style={imageBox}>
+          <img src={clock} alt="clock" style={image} />
           <br />
-          <span style={styles.font}>
+          <span style={font}>
             {faker.random.number({ min: 1, max: 25 })} HR Ago
           </span>
           <br />
           <img
             src={imgColor ? ribbon : ribbonActive}
             alt="clock"
-            style={styles.image}
+            style={image}
             onClick={() => setImgColor(!imgColor)}
           />
-          <span style={styles.font}>SAVE</span>
+          <span style={font}>SAVE</span>
         </div>
         <img
           src={faker.image.business()}
           alt="blog post"
           style={{ height: '80%' }}
         />
-        <div style={styles.infoBox}>
-          <span style={styles.title}>{faker.random.words(2)}</span>
-          <div style={styles.articleTitle}>{faker.random.words(9)}</div>
+        <div style={infoBox}>
+          <span style={title}>{faker.random.words(2)}</span>
+          <div style={articleTitle}>{faker.random.words(9)}</div>
           <div
             style={{
               display: 'flex',
