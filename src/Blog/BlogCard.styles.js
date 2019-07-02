@@ -28,6 +28,7 @@ const styles = {
   },
   title: {
     color: '#2675B2',
+    fontWeight: 'bold',
   },
   articleTitle: {
     width: 500,
@@ -41,6 +42,21 @@ const styles = {
     width: '50rem',
     backgroundColor: 'white',
     marginLeft: 30,
+  },
+  mainTitle: {
+    fontWeight: 'bold',
+    fontSize: 30,
+    marginTop: 10,
+    width: '95%',
+  },
+  paraBox: {
+    display: 'flex',
+    flexDirection: 'column',
+    marginLeft: 50,
+    width: '80%',
+  },
+  para: {
+    marginBottom: 10,
   },
 };
 
