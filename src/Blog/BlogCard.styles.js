@@ -56,7 +56,8 @@ const styles = {
     width: '80%',
   },
   para: {
-    marginBottom: 10,
+    marginBottom: 15,
+    lineHeight: 1.5,
   },
 };
 
