@@ -12,6 +12,9 @@ const styles = {
 
 const article = {
   Name: `${faker.name.firstName()} ${faker.name.lastName()}`,
+  Paragraph: faker.lorem.paragraphs(4),
+  Type: faker.random.words(3),
+  Title: faker.random.words(3),
 };
 
 const BlogMain = () => {
@@ -19,13 +22,17 @@ const BlogMain = () => {
     <>
       blog post
       <div style={styles.post}>
-        article type
+        <div>{article.Type}</div>
         <br />
-        article title
+        {article.Title}
         <br />
         image image description
         <br />
-        article
+        {article.Paragraph}
+        <br />
+        {article.Paragraph}
+        <br />
+        {article.Paragraph}
         <br />
         {article.Name}
       </div>

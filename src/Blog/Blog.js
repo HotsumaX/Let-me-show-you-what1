@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
-import faker from 'faker';
 import BlogCard from './BlogCard';
 import BlogMain from './BlogMain';
 

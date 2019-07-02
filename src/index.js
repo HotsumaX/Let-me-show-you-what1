@@ -1,10 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Router, Link } from '@reach/router';
-import Blog from './Blog';
+import Blog from './Blog/index';
 import Home from './Home';
-import Dash from './Dash';
-import Form from './Form';
+import Dash from './Dash/index';
+import Form from './Form/index';
 
 const styles = {
   NavBar: {
