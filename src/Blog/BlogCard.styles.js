@@ -50,7 +50,6 @@ const styles = {
     width: '95%',
   },
   buttonBox: {
-    border: '1px green solid',
     width: '95%',
     height: '3em',
     marginBottom: '1em',
