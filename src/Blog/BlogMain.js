@@ -12,7 +12,7 @@ const article = {
 };
 
 const BlogMain = () => {
-  const { title, mainTitle, para, paraBox } = styles;
+  const { title, mainTitle, para, paraBox, buttonBox } = styles;
 
   return (
     <>
@@ -21,14 +21,23 @@ const BlogMain = () => {
         <div style={{ marginLeft: '2em', marginTop: '1rem' }}>
           <div style={title}>{article.Type}</div>
           <div style={mainTitle}>{article.Title}</div>
-          <br />
+          <div style={buttonBox}>
+            <img
+              src={faker.image.avatar()}
+              alt="avatar"
+              style={{ height: 45, borderRadius: 50, marginRight: 10 }}
+            />
+            <div>
+              <div>{article.Name}</div>
+              <div>{faker.date.weekday()} 4:52pm</div>
+            </div>
+          </div>
           <img src={article.Image} alt="" style={{ width: '95%' }} />
           <br />
           <div style={{ color: '#818181', marginBottom: 10 }}>
             Photo:{article.Name}(AP)
           </div>
           <div style={paraBox}>
-            <div style={para}>{article.Paragraph}</div>
             <div style={para}>{article.Paragraph}</div>
             <div style={para}>{article.Paragraph}</div>
           </div>

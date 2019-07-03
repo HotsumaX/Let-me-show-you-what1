@@ -49,6 +49,15 @@ const styles = {
     marginTop: 10,
     width: '95%',
   },
+  buttonBox: {
+    border: '1px green solid',
+    width: '95%',
+    height: '3em',
+    marginBottom: '1em',
+    marginTop: '1em',
+    display: 'flex',
+    alignItems: 'center',
+  },
   paraBox: {
     display: 'flex',
     flexDirection: 'column',
