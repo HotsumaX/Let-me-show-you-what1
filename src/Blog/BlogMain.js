@@ -42,15 +42,34 @@ const BlogMain = () => {
               </div>
             </div>
             <div style={icons}>
-              <div style={{ display: 'flex', flexDirection: 'column' }}>
+              <div
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'center',
+                }}
+              >
                 <img src={flame} alt="read-icon" style={image} />
                 131.6k
               </div>
-              <div style={{ display: 'flex', flexDirection: 'column' }}>
+              <div
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'center',
+                }}
+              >
                 <img src={comment} alt="comments" style={image} />
                 181
               </div>
-              <div style={{ display: 'flex', flexDirection: 'column' }}>
+              <div
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}
+              >
                 <img src={favorite} alt="favorite" style={image} />1
               </div>
             </div>

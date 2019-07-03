@@ -1,19 +1,31 @@
 import React from 'react';
 
-const styles = {
-  main: {
-    border: '1px #FD435B solid',
-    height: '70em',
-    width: '60em',
-    marginTop: 10,
-    marginBottom: 30,
-  },
+import styles from './Form.styles';
+
+const InfoCard = () => {
+  const { base } = styles;
+
+  return (
+    <div style={base}>
+      <div>product name quantaty order total</div>
+    </div>
+  );
+};
+
+const DescriptionCard = () => {
+  const { cardBase } = styles;
+  return (
+    <div style={cardBase}>
+      <div>Product something</div>
+    </div>
+  );
 };
 
 const Form = () => {
   return (
     <div style={styles.main}>
-      <div>here is some stuff</div>
+      <InfoCard />
+      <DescriptionCard />
     </div>
   );
 };
