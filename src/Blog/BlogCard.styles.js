@@ -57,6 +57,7 @@ const styles = {
     marginTop: '1em',
     display: 'flex',
     alignItems: 'center',
+    justifyContent: 'space-between',
   },
   paraBox: {
     display: 'flex',
@@ -67,6 +68,11 @@ const styles = {
   para: {
     marginBottom: 15,
     lineHeight: 1.5,
+  },
+  icons: {
+    display: 'flex',
+    width: '8rem',
+    justifyContent: 'space-between',
   },
 };
 
