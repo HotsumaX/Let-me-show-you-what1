@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 const styles = {
   main: {
     border: '1px #FD435B solid',
@@ -11,7 +12,13 @@ const styles = {
     backgroundImage:
       'linear-gradient(to right bottom, #6c7584, #606877, #545b6a, #484f5d, #3d4351)',
     height: '50em',
-    width: '50em',
+    width: '70em',
+    display: 'flex',
+  },
+  stock: {
+    color: '#596475',
+    fontSize: 50,
+    marginBottom: 100,
   },
   cardBase: {
     border: '1px red solid',
