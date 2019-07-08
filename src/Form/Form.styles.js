@@ -15,6 +15,10 @@ const styles = {
     width: '70em',
     display: 'flex',
   },
+  itemColumn: {
+    paddingLeft: '2em',
+    border: '1px red solid',
+  },
   stock: {
     color: '#596475',
     fontSize: 50,

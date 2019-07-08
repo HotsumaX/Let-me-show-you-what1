@@ -8,10 +8,10 @@ import styles from './Form.styles';
 
 const BaseCard = () => {
   const [quantity, setQuantity] = useState(1);
-  const { base, stock } = styles;
+  const { base, stock, itemColumn } = styles;
   return (
     <div style={base}>
-      <div>
+      <div style={itemColumn}>
         <div style={stock}>in stock</div>
         <div style={{ color: '#E87678', fontWeight: 700, fontSize: 20 }}>
           PRODUCT
@@ -57,6 +57,14 @@ const BaseCard = () => {
         </div>
         <hr />
         <div style={{ color: '#8D929E', fontSize: 25 }}>order total</div>
+        <div
+          style={{
+            color: 'white',
+            fontSize: 50,
+          }}
+        >
+          {19.95 * quantity}
+        </div>
       </div>
       <div>product details suggestions video</div>
     </div>
