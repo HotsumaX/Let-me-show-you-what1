@@ -8,24 +8,42 @@ import styles from './Form.styles';
 
 const BaseCard = () => {
   const [quantity, setQuantity] = useState(1);
-  const { base, stock, itemColumn } = styles;
+  const { base, stock, itemColumn, buttonLayout } = styles;
+
   return (
     <div style={base}>
       <div style={itemColumn}>
         <div style={stock}>in stock</div>
-        <div style={{ color: '#E87678', fontWeight: 700, fontSize: 20 }}>
+        <div style={{ color: '#E87678', fontWeight: 700, fontSize: 15 }}>
           PRODUCT
         </div>
-        <div style={{ color: 'white', fontSize: 40 }}>HTFU Stein Glass</div>
-        <div style={{ color: '#8D929E', fontSize: 25 }}>Quantity</div>
+        <div
+          style={{
+            color: 'white',
+            fontSize: 40,
+            marginBottom: 200,
+            fontWeight: '100',
+          }}
+        >
+          HTFU Stein Glass
+        </div>
+        <div style={{ color: '#8D929E', fontSize: 20 }}>Quantity</div>
         <div
           style={{
             color: 'white',
             fontSize: 50,
             display: 'flex',
+            marginBottom: 30,
           }}
         >
-          {quantity === 10 ? ' (Max) ' : null}
+          {quantity === 10 ? (
+            <span
+              style={{ color: '#8D929E', fontSize: 20, alignSelf: 'center' }}
+            >
+              {' '}
+              (Max){' '}
+            </span>
+          ) : null}
           {quantity}
           <div
             style={{
@@ -56,17 +74,31 @@ const BaseCard = () => {
           </div>
         </div>
         <hr />
-        <div style={{ color: '#8D929E', fontSize: 25 }}>order total</div>
+        <div
+          style={{
+            color: '#8D929E',
+            fontSize: 18,
+            marginTop: 30,
+            marginBottom: 5,
+          }}
+        >
+          ORDER TOTAL
+        </div>
         <div
           style={{
             color: 'white',
             fontSize: 50,
           }}
         >
-          {19.95 * quantity}
+          ${(19.95 * quantity).toFixed(2)}
         </div>
       </div>
-      <div>product details suggestions video</div>
+      <div style={buttonLayout}>
+        <div>product</div>
+        <div>details </div>
+        <div>suggestions</div>
+        <div>video</div>
+      </div>
     </div>
   );
 };
