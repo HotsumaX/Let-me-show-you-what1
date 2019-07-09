@@ -9,7 +9,18 @@ const DescriptionCard = () => {
   const { cardBase } = styles;
   return (
     <div style={cardBase}>
-      <div>#45632</div>
+      <div
+        style={{
+          fontSize: 45,
+          marginTop: -10,
+          textAlign: 'right',
+          fontWeight: 'bold',
+          fontStyle: 'italic',
+          color: '#D5D9E1',
+        }}
+      >
+        #45632
+      </div>
       <div style={{ display: 'flex' }}>
         <div>
           <img src={beer} alt="stein" style={{ height: '20em' }} />

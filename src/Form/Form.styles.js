@@ -35,7 +35,7 @@ const styles = {
     width: '45em',
     marginLeft: '-40em',
     marginTop: '10em',
-    boxShadow: '0px 7px 15px 2px #000000',
+    boxShadow: '0px 1px 40px 1px #000000',
   },
   buttonLayout: {
     color: '#A1AAB9',
