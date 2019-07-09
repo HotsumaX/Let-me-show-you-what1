@@ -5,7 +5,12 @@ const DescriptionCard = () => {
   const { cardBase } = styles;
   return (
     <div style={cardBase}>
-      <div>Product something</div>
+      <div>#45632</div>
+      <div>image</div>
+      <div>category</div>
+      <div>description</div>
+      <div>stars</div>
+      <div>add to cart</div>
     </div>
   );
 };

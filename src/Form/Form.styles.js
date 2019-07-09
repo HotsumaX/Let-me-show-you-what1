@@ -25,7 +25,7 @@ const styles = {
     marginBottom: 100,
     fontStyle: 'italic',
     fontWeight: 900,
-    marginTop: -18,
+    marginTop: -16,
     marginLeft: -30,
   },
   cardBase: {
@@ -33,7 +33,7 @@ const styles = {
     backgroundColor: '#F3F3F3',
     height: '35em',
     width: '45em',
-    marginLeft: '-38em',
+    marginLeft: '-40em',
     marginTop: '10em',
   },
   buttonLayout: {
