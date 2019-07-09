@@ -29,7 +29,6 @@ const styles = {
     marginLeft: -30,
   },
   cardBase: {
-    border: '1px red solid',
     backgroundColor: '#F3F3F3',
     height: '35em',
     width: '45em',
@@ -45,7 +44,6 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-between',
     width: 500,
-    border: '1px green solid',
     marginLeft: 30,
     fontStyle: 'italic',
   },
