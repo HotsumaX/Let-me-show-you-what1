@@ -4,9 +4,10 @@ import styles from './Form.styles';
 import beer from './images/518663-removebg-preview.png';
 import star from './images/star.svg';
 import halfStar from './images/star (1).svg';
+import cart from './images/shopping-store-cart-.svg';
 
 const DescriptionCard = () => {
-  const { cardBase } = styles;
+  const { cardBase, cartButton } = styles;
   return (
     <div style={cardBase}>
       <div
@@ -75,10 +76,18 @@ const DescriptionCard = () => {
           >
             DESCRIPTION
           </div>
-          <div style={{ fontSize: 30, color: '#797F86' }}>
+          <div style={{ fontSize: 30, color: '#797F86', width: 400 }}>
             Each beer glass is specifically designed to enjoy a particular beer
             style.
           </div>
+          <button style={cartButton} type="button">
+            <img
+              src={cart}
+              alt="cart"
+              style={{ height: 20, marginRight: 15 }}
+            />
+            ADD TO CART
+          </button>
         </div>
       </div>
     </div>

@@ -93,11 +93,23 @@ const BaseCard = () => {
           ${(19.95 * quantity).toFixed(2)}
         </div>
       </div>
-      <div style={buttonLayout}>
-        <div>product</div>
-        <div>details </div>
-        <div>suggestions</div>
-        <div>video</div>
+      <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <div style={buttonLayout}>
+          <div>product</div>
+          <div>details </div>
+          <div>suggestions</div>
+          <div>video</div>
+        </div>
+        <div
+          style={{
+            marginTop: 610,
+            color: 'white',
+            marginLeft: 10,
+            fontWeight: 'bolder',
+          }}
+        >
+          + ADD TO WISHLIST
+        </div>
       </div>
     </div>
   );
