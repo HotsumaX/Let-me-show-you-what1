@@ -6,6 +6,9 @@ import star from './images/star.svg';
 import halfStar from './images/star (1).svg';
 import cart from './images/shopping-store-cart-.svg';
 
+// eslint-disable-next-line max-len
+// pulled from dribble "https://dribbble.com/shots/3202129-Smokemart-and-GiftBox-Product-item/attachments/682840"
+
 const DescriptionCard = () => {
   const { cardBase, cartButton } = styles;
   return (

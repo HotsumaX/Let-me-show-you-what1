@@ -1,7 +1,6 @@
 /* eslint-disable max-len */
 const styles = {
   main: {
-    border: '1px #FD435B solid',
     height: '70em',
     width: '100em',
     marginTop: 10,

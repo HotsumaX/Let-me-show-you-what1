@@ -4,7 +4,7 @@ import { Router, Link } from '@reach/router';
 import Blog from './Blog/index';
 import Home from './Home';
 import Dash from './Dash/index';
-import Form from './Form/index';
+import Shop from './Shop';
 
 const styles = {
   NavBar: {
@@ -39,7 +39,7 @@ const NavBar = () => {
     <div style={styles.NavBar}>
       <Link to="/">Home</Link>
       <Link to="/Blog">Blog</Link>
-      <Link to="/Form">Form</Link>
+      <Link to="/Shop">Shop</Link>
       <Link to="/Dashboard">Dynamic dashboard</Link>
     </div>
   );
@@ -61,7 +61,7 @@ const App = () => {
         <Router>
           <Home path="/" />
           <Blog path="/Blog" />
-          <Form path="/Form" />
+          <Shop path="/Shop" />
           <Dash path="/Dashboard" />
         </Router>
         <BotSec />

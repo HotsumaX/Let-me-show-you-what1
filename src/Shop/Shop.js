@@ -4,7 +4,7 @@ import styles from './Form.styles';
 import BaseCard from './BaseCard';
 import DescriptionCard from './DescriptionCard';
 
-const Form = () => {
+const Shop = () => {
   return (
     <div style={styles.main}>
       <BaseCard />
@@ -13,4 +13,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default Shop;
