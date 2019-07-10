@@ -26,6 +26,20 @@ const styles = {
       border: '1px blue solid',
       width: '20em',
     },
+    gearBox: {
+      border: '1px black solid',
+      display: 'flex',
+      justifyContent: 'flex-end',
+    },
+    gear: {
+      height: 25,
+      marginRight: 10,
+    },
+    userImage: {
+      border: '1px red solid',
+      display: 'flex',
+      justifyContent: 'center',
+    },
   },
 };
 
