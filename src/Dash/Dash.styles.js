@@ -21,7 +21,7 @@ const styles = {
       justifyContent: 'center',
     },
   },
-  porfileCard: {
+  profileCard: {
     main: {
       border: '1px blue solid',
       width: '20em',
@@ -39,6 +39,39 @@ const styles = {
       border: '1px red solid',
       display: 'flex',
       justifyContent: 'center',
+    },
+    statusNum: {
+      display: 'flex',
+      justifyContent: 'space-around',
+    },
+    statusNumBox: {
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      marginBottom: 20,
+      textAlign: 'center',
+    },
+    buttons: {
+      display: 'flex',
+      justifyContent: 'center',
+    },
+    activityButton: {
+      color: 'white',
+      backgroundColor: 'black',
+      width: '90%',
+      height: '2em',
+      fontSize: 20,
+      fontWeight: '200',
+      borderRadius: 5,
+      marginBottom: 10,
+    },
+    membershipButton: {
+      backgroundColor: '#0986FF',
+      color: 'white',
+      width: '90%',
+      height: '5em',
+      fontSize: 12,
+      borderRadius: 5,
     },
   },
 };

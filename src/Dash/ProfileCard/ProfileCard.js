@@ -6,7 +6,7 @@ import Actions from './Actions';
 import LiveFeed from './LiveFeed';
 
 const ProfileCard = () => {
-  const { main } = styles.porfileCard;
+  const { main } = styles.profileCard;
 
   return (
     <div style={main}>
