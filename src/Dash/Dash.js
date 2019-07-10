@@ -1,9 +1,6 @@
 import React from 'react';
 import HomeBar from './HomeBar';
-
-const ProfileCard = () => {
-  return <div>ProfileCard</div>;
-};
+import ProfileCard from './ProfileCard/ProfileCard';
 
 const MainDash = () => {
   return <div>MainDash</div>;

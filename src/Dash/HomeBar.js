@@ -1,7 +1,7 @@
 import React from 'react';
 
 import flower from './images/flower.svg';
-import styles from './Styles.Dash';
+import styles from './Dash.styles';
 
 const HomeBar = () => {
   const { homeBar, icon, homeButton } = styles.homeBarMain;

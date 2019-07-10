@@ -21,6 +21,12 @@ const styles = {
       justifyContent: 'center',
     },
   },
+  porfileCard: {
+    main: {
+      border: '1px blue solid',
+      width: '20em',
+    },
+  },
 };
 
 export default styles;
