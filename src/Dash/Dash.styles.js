@@ -7,6 +7,7 @@ const styles = {
       borderRadius: '20px 20px 0 0 ',
       alignItems: 'center',
       display: 'flex',
+      marginBottom: 30,
     },
     icon: {
       height: 40,
@@ -24,21 +25,22 @@ const styles = {
   profileCard: {
     main: {
       border: '1px blue solid',
-      width: '20em',
+      borderRadius: 15,
+      width: '15em',
     },
     gearBox: {
-      border: '1px black solid',
       display: 'flex',
-      justifyContent: 'flex-end',
+      justifyContent: 'space-between',
+      marginTop: 10,
+      width: '90%',
     },
     gear: {
-      height: 25,
-      marginRight: 10,
+      height: 20,
     },
     userImage: {
-      border: '1px red solid',
       display: 'flex',
       justifyContent: 'center',
+      marginBottom: 10,
     },
     statusNum: {
       display: 'flex',
@@ -51,6 +53,15 @@ const styles = {
       marginBottom: 20,
       textAlign: 'center',
     },
+    statusTitle: {
+      fontSize: 10,
+    },
+    statusItem: {
+      fontSize: 25,
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
     buttons: {
       display: 'flex',
       justifyContent: 'center',
@@ -59,8 +70,8 @@ const styles = {
       color: 'white',
       backgroundColor: 'black',
       width: '90%',
-      height: '2em',
-      fontSize: 20,
+      height: '3em',
+      fontSize: 12,
       fontWeight: '200',
       borderRadius: 5,
       marginBottom: 10,
@@ -72,6 +83,12 @@ const styles = {
       height: '5em',
       fontSize: 12,
       borderRadius: 5,
+    },
+    hrbreak: {
+      backgroundColor: '#ECEEF2',
+      border: '0',
+      width: '95%',
+      height: '.5px',
     },
   },
 };
