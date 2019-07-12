@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Switch from 'react-switch';
 
+import styles from '../Dash.styles';
+
 const Actions = () => {
   const [state, setState] = useState({
     follows: true,
@@ -10,7 +12,7 @@ const Actions = () => {
   });
 
   const switchSettings = {
-    handleDiameter: 15,
+    handleDiameter: 17,
     height: 20,
     width: 40,
     uncheckedIcon: false,
@@ -18,6 +20,8 @@ const Actions = () => {
     offColor: '#D2E6F6',
     onColor: '#0986FF',
   };
+
+  const { title } = styles.actionCard;
 
   return (
     <div>
@@ -31,41 +35,50 @@ const Actions = () => {
           marginLeft: 10,
         }}
       >
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-          }}
-        >
+        <div style={title}>
           <Switch
             {...switchSettings}
             checked={state.follows}
-            onChange={() => setState({ ...state, follows: !state.follows })}
+            onChange={() =>
+              setState(prevState => ({ ...state, follows: !prevState.follows }))
+            }
           />
           Follows button
         </div>
-        <div>
+        <div style={title}>
           <Switch
             {...switchSettings}
             checked={state.unfollows}
-            onChange={() => setState({ ...state, unfollows: !state.unfollows })}
+            onChange={() =>
+              setState(prevState => ({
+                ...state,
+                unfollows: !prevState.unfollows,
+              }))
+            }
           />
           unfollows button
         </div>
 
-        <div>
+        <div style={title}>
           <Switch
             {...switchSettings}
             checked={state.likes}
-            onChange={() => setState({ ...state, likes: !state.likes })}
+            onChange={() =>
+              setState(prevState => ({ ...state, likes: !prevState.likes }))
+            }
           />
           likes button
         </div>
-        <div>
+        <div style={title}>
           <Switch
             {...switchSettings}
             checked={state.comments}
-            onChange={() => setState({ ...state, comments: !state.comments })}
+            onChange={() =>
+              setState(prevState => ({
+                ...state,
+                comments: !prevState.comments,
+              }))
+            }
           />
           comments button
         </div>

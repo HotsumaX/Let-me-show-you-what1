@@ -91,6 +91,12 @@ const styles = {
       height: '.5px',
     },
   },
+  actionCard: {
+    title: {
+      display: 'flex',
+      alignItems: 'center',
+    },
+  },
 };
 
 export default styles;
