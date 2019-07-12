@@ -8,7 +8,7 @@ const MainDash = () => {
 
 const Dash = () => {
   return (
-    <div>
+    <div style={{ height: '90em' }}>
       <HomeBar />
       <div style={{ display: 'flex' }}>
         <ProfileCard />
