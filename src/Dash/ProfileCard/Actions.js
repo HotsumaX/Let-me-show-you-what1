@@ -21,11 +21,13 @@ const Actions = () => {
     onColor: '#0986FF',
   };
 
-  const { title } = styles.actionCard;
+  const { title, hrbreak } = styles.actionCard;
 
   return (
-    <div>
-      <div>Actions</div>
+    <section>
+      <div style={{ marginLeft: 10, marginBottom: 10, color: 'gray' }}>
+        Actions
+      </div>
       <div
         style={{
           height: 140,
@@ -43,7 +45,8 @@ const Actions = () => {
               setState(prevState => ({ ...state, follows: !prevState.follows }))
             }
           />
-          Follows button
+          <span style={{ marginLeft: -75 }}>Follows</span>
+          <span>290</span>
         </div>
         <div style={title}>
           <Switch
@@ -56,7 +59,8 @@ const Actions = () => {
               }))
             }
           />
-          unfollows button
+          <span style={{ marginLeft: -60 }}>Unfollows</span>
+          <span>120</span>
         </div>
 
         <div style={title}>
@@ -67,7 +71,8 @@ const Actions = () => {
               setState(prevState => ({ ...state, likes: !prevState.likes }))
             }
           />
-          likes button
+          <span style={{ marginLeft: -100 }}>Likes</span>
+          <span>0</span>
         </div>
         <div style={title}>
           <Switch
@@ -80,12 +85,13 @@ const Actions = () => {
               }))
             }
           />
-          comments button
+          <span style={{ marginLeft: -60 }}>Comments</span>
+          <span>10</span>
         </div>
       </div>
 
-      <hr />
-    </div>
+      <hr style={hrbreak} />
+    </section>
   );
 };
 export default Actions;

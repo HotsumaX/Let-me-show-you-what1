@@ -95,6 +95,14 @@ const styles = {
     title: {
       display: 'flex',
       alignItems: 'center',
+      width: '95%',
+      justifyContent: 'space-between',
+    },
+    hrbreak: {
+      backgroundColor: '#ECEEF2',
+      border: '0',
+      width: '95%',
+      height: '1px',
     },
   },
 };
