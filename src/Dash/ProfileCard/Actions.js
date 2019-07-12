@@ -24,10 +24,10 @@ const Actions = () => {
       <div>Actions</div>
       <div
         style={{
-          height: 125,
+          height: 140,
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: 'space-between',
+          justifyContent: 'space-around',
           marginLeft: 10,
         }}
       >
