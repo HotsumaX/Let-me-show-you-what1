@@ -1,10 +1,7 @@
 import React from 'react';
 import HomeBar from './HomeBar';
 import ProfileCard from './ProfileCard/ProfileCard';
-
-const MainDash = () => {
-  return <div>MainDash</div>;
-};
+import MainDash from './MainDash';
 
 const Dash = () => {
   return (
