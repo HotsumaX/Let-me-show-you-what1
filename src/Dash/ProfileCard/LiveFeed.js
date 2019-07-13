@@ -27,15 +27,52 @@ const feed = [
 const FeedCard = ({ data }) => {
   return data.map(item => {
     return (
-      <div>
-        <div style={{ border: '1px lightblue solid', borderRadius: '50%' }}>
-          <img src={item.avatar} alt="avatar" style={{ borderRadius: '50%' }} />
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          height: 50,
+        }}
+      >
+        <div
+          style={{
+            border: '1px blue solid',
+            borderRadius: '50%',
+            height: 45,
+            width: 45,
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          <img
+            src={item.avatar}
+            alt="avatar"
+            style={{ borderRadius: '50%', height: 40 }}
+          />
         </div>
-        <div>{item.id}</div>
-        <div>{item.name}</div>
-        <div>{item.status}</div>
         <div>
-          <img src={plusButton} alt="add user" style={{ height: 10 }} />
+          <div>{item.name}</div>
+          <div style={{ color: 'gray' }}>{item.status}</div>
+        </div>
+
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'flex-end',
+            alignItems: 'center',
+            height: '70%',
+            width: 50,
+          }}
+        >
+          <img
+            src={plusButton}
+            alt="add user"
+            style={{ height: 15 }}
+            onClick={() =>
+              window.alert(`User ${item.name} has been added to your account`)
+            }
+          />
         </div>
       </div>
     );
@@ -44,9 +81,17 @@ const FeedCard = ({ data }) => {
 
 const LiveFeed = () => {
   return (
-    <div>
-      Live Feed
-      <div>enter the personal card {feed[0].name}</div>
+    <div
+      style={{
+        width: '90%',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        marginLeft: 10,
+        marginTop: 20,
+      }}
+    >
+      <span style={{ marginBottom: 20, color: 'gray' }}>Live Feed</span>
       <FeedCard data={feed} />
     </div>
   );

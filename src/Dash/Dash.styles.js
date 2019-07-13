@@ -105,6 +105,7 @@ const styles = {
       height: '1px',
     },
   },
+  liveFeed: {},
 };
 
 export default styles;
