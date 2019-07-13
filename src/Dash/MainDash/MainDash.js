@@ -12,13 +12,19 @@ const MainDash = () => {
   return (
     <div>
       <MainDashHeader />
-      <TotalFollowers />
-      <Engagement />
-      <GrowthRate />
-      <FollowersTrend />
-      <ActionsChart />
-      <SourcePerformance />
-      <LatestConversations />
+      <div style={{ display: 'flex' }}>
+        <TotalFollowers />
+        <Engagement />
+        <GrowthRate />
+      </div>
+      <div style={{ display: 'flex' }}>
+        <FollowersTrend />
+        <ActionsChart />
+      </div>
+      <div style={{ display: 'flex' }}>
+        <SourcePerformance />
+        <LatestConversations />
+      </div>
     </div>
   );
 };
