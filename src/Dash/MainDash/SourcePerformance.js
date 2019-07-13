@@ -46,7 +46,7 @@ const DataList = ({ info }) => {
 
 const SourcePerformance = () => {
   return (
-    <div style={{ border: '1px red solid', width: 260, minHeight: 50 }}>
+    <div style={{ border: '1px red solid', width: 275, minHeight: 50 }}>
       <div style={{ border: '1px blue solid' }}>{data.title}</div>
       <div>
         <DataList {...data} />
