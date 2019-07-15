@@ -34,7 +34,7 @@ const FeedCard = ({ data }) => {
         style={{
           display: 'flex',
           justifyContent: 'space-between',
-          height: 50,
+          height: 65,
         }}
       >
         <div

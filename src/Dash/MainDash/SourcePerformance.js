@@ -35,6 +35,8 @@ const DataList = ({ info }) => {
           justifyContent: 'space-between',
           width: '90%',
           paddingLeft: 10,
+          height: 30,
+          alignItems: 'center',
         }}
       >
         <div>{item.tag}</div>
@@ -47,7 +49,17 @@ const DataList = ({ info }) => {
 const SourcePerformance = () => {
   return (
     <div style={{ border: '1px red solid', width: 275, minHeight: 50 }}>
-      <div style={{ border: '1px blue solid' }}>{data.title}</div>
+      <div
+        style={{
+          border: '1px blue solid',
+          height: 50,
+          display: 'flex',
+          alignItems: 'center',
+          paddingLeft: 10,
+        }}
+      >
+        {data.title}
+      </div>
       <div>
         <DataList {...data} />
       </div>
