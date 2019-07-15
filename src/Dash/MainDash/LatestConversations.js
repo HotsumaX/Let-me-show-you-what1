@@ -1,6 +1,38 @@
 import React from 'react';
+import faker from 'faker';
 
-const data = {};
+const data = [
+  {
+    name: 'debra_williams',
+    time: 'a min ago',
+    tag: 'coffee',
+  },
+  {
+    name: 'olivia_stone',
+    time: 'a hour ago',
+    tag: 'hot',
+  },
+  {
+    name: 'michelle.vargas',
+    time: '6:21pm',
+    tag: 'cocoa',
+  },
+  {
+    name: 'sandra.gordon',
+    time: '4:32pm',
+    tag: 'starbucks',
+  },
+  {
+    name: 'james.doug',
+    time: 'yesterday 12:02pm',
+    tag: 'getstuffdone',
+  },
+  {
+    name: 'jim_jamason',
+    time: 'tuesday 3:30pm',
+    tag: 'morningtakeoff',
+  },
+];
 
 const LatestConversations = () => {
   return (
@@ -23,7 +55,7 @@ const LatestConversations = () => {
       >
         LatestConversations
       </div>
-      <div style={{ height: 240 }}>posts</div>
+      <div style={{ height: 240, overflowX: 'auto' }}>posts</div>
     </div>
   );
 };
