@@ -44,7 +44,7 @@ const ActionsChart = () => {
         justifyContent: 'space-around',
       }}
     >
-      <div style={{ color: 'gray', marginLeft: 20 }}>ActionsChart</div>
+      <div style={{ color: 'gray', marginLeft: 20 }}>Actions</div>
       <div>
         <Chart type="line" data={data} options={options} height="250" />
       </div>
