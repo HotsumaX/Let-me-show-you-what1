@@ -58,15 +58,14 @@ const SourcePerformance = () => {
   return (
     <div
       style={{
-        border: '1px red solid',
         width: 275,
         minHeight: 50,
         boxShadow: '0px 10px 26px -12px rgba(0,0,0,0.75)',
+        borderRadius: 10,
       }}
     >
       <div
         style={{
-          border: '1px blue solid',
           height: 50,
           display: 'flex',
           alignItems: 'center',
@@ -76,7 +75,12 @@ const SourcePerformance = () => {
       >
         {data.title}
       </div>
-      <div style={{ overflowX: 'auto', height: 240 }}>
+      <div
+        style={{
+          overflowX: 'auto',
+          height: 240,
+        }}
+      >
         <DataList {...data} />
       </div>
     </div>

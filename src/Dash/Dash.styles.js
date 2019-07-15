@@ -7,6 +7,7 @@ const styles = {
       borderRadius: '20px 20px 0 0 ',
       alignItems: 'center',
       display: 'flex',
+      width: '75em',
     },
     icon: {
       height: 40,
