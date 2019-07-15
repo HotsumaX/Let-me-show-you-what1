@@ -7,7 +7,6 @@ const styles = {
       borderRadius: '20px 20px 0 0 ',
       alignItems: 'center',
       display: 'flex',
-      marginBottom: 30,
     },
     icon: {
       height: 40,
@@ -24,9 +23,10 @@ const styles = {
   },
   profileCard: {
     main: {
-      border: '1px blue solid',
       borderRadius: 15,
+      minWidth: '14em',
       width: '15em',
+      boxShadow: '0px 10px 26px -12px rgba(0,0,0,0.75)',
     },
     gearBox: {
       display: 'flex',
@@ -105,7 +105,34 @@ const styles = {
       height: '1px',
     },
   },
-  liveFeed: {},
+  FeedCard: {
+    feedCardMain: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      height: 65,
+      backgroundColor: 'white',
+    },
+    imageBorder: {
+      border: '1px blue solid',
+      borderRadius: '50%',
+      height: 45,
+      width: 45,
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+  },
+  LiveFeed: {
+    liveFeedMain: {
+      width: '90%',
+      minWidth: '10em',
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      marginLeft: 10,
+      marginTop: 20,
+    },
+  },
 };
 
 export default styles;

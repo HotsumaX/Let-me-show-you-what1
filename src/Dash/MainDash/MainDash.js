@@ -10,7 +10,7 @@ import LatestConversations from './LatestConversations';
 
 const MainDash = () => {
   return (
-    <div>
+    <div style={{ marginLeft: 20 }}>
       <MainDashHeader />
       <div
         style={{

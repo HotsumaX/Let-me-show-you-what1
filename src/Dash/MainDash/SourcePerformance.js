@@ -23,6 +23,14 @@ const data = {
       tag: '#kickstart',
       value: 30,
     },
+    {
+      tag: '#morningpickmeup',
+      value: 30,
+    },
+    {
+      tag: '#gogojuice',
+      value: 30,
+    },
   ],
 };
 
@@ -35,7 +43,7 @@ const DataList = ({ info }) => {
           justifyContent: 'space-between',
           width: '90%',
           paddingLeft: 10,
-          height: 30,
+          height: 50,
           alignItems: 'center',
         }}
       >
@@ -48,7 +56,14 @@ const DataList = ({ info }) => {
 
 const SourcePerformance = () => {
   return (
-    <div style={{ border: '1px red solid', width: 275, minHeight: 50 }}>
+    <div
+      style={{
+        border: '1px red solid',
+        width: 275,
+        minHeight: 50,
+        boxShadow: '0px 10px 26px -12px rgba(0,0,0,0.75)',
+      }}
+    >
       <div
         style={{
           border: '1px blue solid',
@@ -56,11 +71,12 @@ const SourcePerformance = () => {
           display: 'flex',
           alignItems: 'center',
           paddingLeft: 10,
+          boxShadow: '0px 16px 23px -20px rgba(15,31,95,1)',
         }}
       >
         {data.title}
       </div>
-      <div>
+      <div style={{ overflowX: 'auto', height: 240 }}>
         <DataList {...data} />
       </div>
     </div>

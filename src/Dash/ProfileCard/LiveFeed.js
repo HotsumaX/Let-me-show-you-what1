@@ -5,6 +5,7 @@ import React from 'react';
 import faker from 'faker';
 
 import plusButton from './images/add-square-button.svg';
+import styles from '../Dash.styles';
 
 const feed = [
   {
@@ -28,33 +29,19 @@ const feed = [
 ];
 
 const FeedCard = ({ data }) => {
+  const { feedCardMain, imageBorder } = styles.FeedCard;
+
   return data.map(item => {
     return (
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          height: 65,
-        }}
-      >
-        <div
-          style={{
-            border: '1px blue solid',
-            borderRadius: '50%',
-            height: 45,
-            width: 45,
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-        >
+      <div style={feedCardMain}>
+        <div style={imageBorder}>
           <img
             src={item.avatar}
             alt="avatar"
             style={{ borderRadius: '50%', height: 40 }}
           />
         </div>
-        <div>
+        <div style={{ marginLeft: 10 }}>
           <div>{item.name}</div>
           <div style={{ color: 'gray' }}>{item.status}</div>
         </div>
@@ -83,17 +70,9 @@ const FeedCard = ({ data }) => {
 };
 
 const LiveFeed = () => {
+  const { liveFeedMain } = styles.LiveFeed;
   return (
-    <div
-      style={{
-        width: '90%',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        marginLeft: 10,
-        marginTop: 20,
-      }}
-    >
+    <div style={liveFeedMain}>
       <span style={{ marginBottom: 20, color: 'gray' }}>Live Feed</span>
       <FeedCard data={feed} />
     </div>

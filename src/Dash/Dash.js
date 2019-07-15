@@ -7,7 +7,7 @@ const Dash = () => {
   return (
     <div style={{ height: '90em' }}>
       <HomeBar />
-      <div style={{ display: 'flex' }}>
+      <div style={{ display: 'flex', paddingTop: 30 }}>
         <ProfileCard />
         <MainDash />
       </div>
