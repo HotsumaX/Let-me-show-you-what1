@@ -14,10 +14,13 @@ const SmallChartBox = ({ title, value, type }) => {
         boxShadow: '0px 10px 26px -12px rgba(0,0,0,0.75)',
       }}
     >
-      {title} <img src={Uarrow} alt="trend arrow up" style={{ height: 20 }} />
-      <div style={{ fontSize: 30 }}>
-        {value}
-        {type === 'number' ? 'k' : '%'}
+      {title} <img src={Uarrow} alt="trend arrow up" style={{ height: 15 }} />
+      <div style={{ display: 'flex' }}>
+        <div style={{ fontSize: 30 }}>
+          {value}
+          {type === 'number' ? 'k' : '%'}
+        </div>
+        <div>chart</div>
       </div>
     </div>
   );

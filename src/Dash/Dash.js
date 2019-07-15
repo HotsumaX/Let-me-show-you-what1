@@ -5,7 +5,13 @@ import MainDash from './MainDash';
 
 const Dash = () => {
   return (
-    <div style={{ height: '90em' }}>
+    <div
+      style={{
+        height: '90em',
+        width: '80em',
+        margin: '0 auto',
+      }}
+    >
       <HomeBar />
       <div style={{ display: 'flex', paddingTop: 30, paddingLeft: 20 }}>
         <ProfileCard />

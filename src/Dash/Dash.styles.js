@@ -2,12 +2,12 @@ const styles = {
   homeBarMain: {
     homeBar: {
       height: '4em',
-      border: '1px green solid',
       marginTop: 30,
       borderRadius: '20px 20px 0 0 ',
       alignItems: 'center',
       display: 'flex',
       width: '75em',
+      boxShadow: '0px 10px 26px -12px rgba(0,0,0,0.75)',
     },
     icon: {
       height: 40,
@@ -16,7 +16,6 @@ const styles = {
     homeButton: {
       height: '100%',
       width: 70,
-      border: '1px red solid',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',

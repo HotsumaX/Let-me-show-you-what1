@@ -71,6 +71,7 @@ const SourcePerformance = () => {
           alignItems: 'center',
           paddingLeft: 10,
           boxShadow: '0px 16px 23px -20px rgba(15,31,95,1)',
+          color: 'gray',
         }}
       >
         {data.title}

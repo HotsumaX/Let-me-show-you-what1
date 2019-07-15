@@ -8,10 +8,10 @@ const HomeBar = () => {
   return (
     <div style={homeBar}>
       <img src={flower} alt="logo" style={icon} />
-      <div style={homeButton}>home</div>
-      <div style={homeButton}>referral</div>
-      <div style={homeButton}>profile</div>
-      <div style={homeButton}>help</div>
+      <div style={homeButton}>Home</div>
+      <div style={homeButton}>Referral</div>
+      <div style={homeButton}>Profile</div>
+      <div style={homeButton}>Help</div>
     </div>
   );
 };
