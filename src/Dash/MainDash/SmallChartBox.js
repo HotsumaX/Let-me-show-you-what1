@@ -8,8 +8,8 @@ const SmallChartBox = ({ title, value, type, options, data2 }) => {
   return (
     <div
       style={{
-        height: 100,
-        width: 275,
+        height: 125,
+        width: 300,
         borderRadius: 5,
         boxShadow: '0px 10px 26px -12px rgba(0,0,0,0.75)',
         display: 'flex',
@@ -33,7 +33,7 @@ const SmallChartBox = ({ title, value, type, options, data2 }) => {
           {type === 'number' ? 'k' : '%'}
         </div>
         <div>
-          <Chart type="line" options={options} data={data2} width="110" />
+          <Chart type="line" options={options} data={data2} width="120" />
         </div>
       </div>
     </div>

@@ -15,7 +15,7 @@ const MainDash = () => {
       <div
         style={{
           display: 'flex',
-          width: 900,
+          width: 950,
           justifyContent: 'space-between',
           alignItems: 'center',
         }}
@@ -27,7 +27,7 @@ const MainDash = () => {
       <div
         style={{
           display: 'flex',
-          width: 900,
+          width: 950,
           justifyContent: 'space-between',
           alignItems: 'center',
           height: 350,

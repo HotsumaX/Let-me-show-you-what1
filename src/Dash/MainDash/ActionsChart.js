@@ -35,7 +35,7 @@ const ActionsChart = () => {
   return (
     <div
       style={{
-        width: 275,
+        width: 300,
         height: 320,
         borderRadius: 5,
         boxShadow: '0px 10px 26px -12px rgba(0,0,0,0.75)',

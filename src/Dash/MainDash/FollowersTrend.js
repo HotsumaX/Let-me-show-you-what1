@@ -48,7 +48,7 @@ const FollowersTrend = () => {
     <div
       style={{
         height: 320,
-        width: 585,
+        width: 625,
         borderRadius: 5,
         boxShadow: '0px 10px 26px -12px rgba(0,0,0,0.75)',
         display: 'flex',
