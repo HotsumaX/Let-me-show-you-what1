@@ -6,7 +6,7 @@ const styles = {
       borderRadius: '20px 20px 0 0 ',
       alignItems: 'center',
       display: 'flex',
-      width: '75em',
+      width: '78em',
       boxShadow: '0px 10px 26px -12px rgba(0,0,0,0.75)',
     },
     icon: {
@@ -131,6 +131,21 @@ const styles = {
       justifyContent: 'center',
       marginLeft: 10,
       marginTop: 20,
+    },
+  },
+  MainDashHeader: {
+    headerButtons: {
+      width: 120,
+      height: 60,
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      fontSize: 15,
+      color: 'gray',
+    },
+    test: {
+      borderBottom: '3px RGBA(9, 134, 255, 1.00) solid',
+      color: 'black',
     },
   },
 };

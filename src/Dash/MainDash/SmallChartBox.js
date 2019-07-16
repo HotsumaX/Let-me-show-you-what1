@@ -25,7 +25,7 @@ const SmallChartBox = ({ title, value, type, options, data2 }) => {
         style={{
           display: 'flex',
           justifyContent: 'space-around',
-          alignItems: 'center',
+          alignItems: 'flex-end',
         }}
       >
         <div style={{ fontSize: 40 }}>

@@ -5,6 +5,7 @@ import Blog from './Blog/index';
 import Home from './Home';
 import Dash from './Dash/index';
 import Shop from './Shop';
+import CCForm from './CCForm';
 
 const styles = {
   NavBar: {
@@ -34,13 +35,15 @@ const styles = {
     paddingBottom: '2.5rem',
   },
 };
+
 const NavBar = () => {
   return (
     <div style={styles.NavBar}>
       <Link to="/">Home</Link>
       <Link to="/Blog">Blog</Link>
       <Link to="/Shop">Shop</Link>
-      <Link to="/Dashboard">Dynamic dashboard</Link>
+      <Link to="/Dashboard">Dashboard</Link>
+      <Link to="CCForm">Credit Card Form</Link>
     </div>
   );
 };
@@ -63,6 +66,7 @@ const App = () => {
           <Blog path="/Blog" />
           <Shop path="/Shop" />
           <Dash path="/Dashboard" />
+          <CCForm path="/CCForm" />
         </Router>
         <BotSec />
       </div>
