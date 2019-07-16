@@ -28,12 +28,12 @@ const SmallChartBox = ({ title, value, type, options, data2 }) => {
           alignItems: 'center',
         }}
       >
-        <div style={{ fontSize: 30 }}>
+        <div style={{ fontSize: 40 }}>
           {value}
           {type === 'number' ? 'k' : '%'}
         </div>
         <div>
-          <Chart type="line" options={options} data={data2} width="120" />
+          <Chart type="line" options={options} data={data2} width="140" />
         </div>
       </div>
     </div>
