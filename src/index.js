@@ -42,7 +42,7 @@ const NavBar = () => {
       <Link to="/">Home</Link>
       <Link to="/Blog">Blog</Link>
       <Link to="/Shop">Shop</Link>
-      <Link to="/Dashboard">Dashboard</Link>
+      <Link to="Dashboard">Dashboard</Link>
       <Link to="CCForm">Credit Card Form</Link>
     </div>
   );
