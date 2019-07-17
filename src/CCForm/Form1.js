@@ -45,8 +45,31 @@ const Form1 = () => {
             <input type="text" placeholder="XXXX XXXX XXXX XXXX" />
           </label>
           <label htmlFor="Expiry date">
-            <input type="month" name="" id="" />
+            Expiry date
+            <div>
+              <input
+                type="number"
+                name="expiry month"
+                min="1"
+                max="12"
+                placeholder="MM"
+              />
+              <input type="number" name="expiry year" placeholder="YYYY" />
+            </div>
           </label>
+          <label htmlFor="CVV">
+            CVV <br />
+            <input type="text" name="CVV number" placeholder="CVV" />
+          </label>
+          By purchasing i agree to the terms and service.
+          <br />
+          <button type="submit">Start free trial - pay after 7 days</button>
+          <div>
+            Your 7-day-trial will start today and end on 28 march 2019. Unless
+            you cancel during this period, you'll be charged $89.99 after 7
+            days. afterwards your subscription will renew automatically every
+            year, but you can cancel anytime. details can be found here.
+          </div>
         </form>
       </div>
     </div>
