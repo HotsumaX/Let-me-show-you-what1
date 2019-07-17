@@ -1,39 +1,54 @@
 import React from 'react';
 
+import styles from './CCForm.styles';
+
 const Form1 = () => {
+  const { MainBox } = styles.Form1;
   return (
     <div>
       <h2>Current payment form</h2>
-      <div>card1</div>
-      <form style={{ display: 'flex', flexDirection: 'column' }}>
-        <label>
-          test <br />
-          <input type="checkbox" />
-        </label>
-        <label>
-          test 2 <br />
-          <input type="text" />
-        </label>
-        <label htmlFor="item3">
-          gettting it in
-          <select name="list" id="2">
-            <option value="blank" />
-            <option value="item1">item1</option>
-            <option value="item2">item2</option>
-            <option value="item3">item3</option>
-            <option value="item4">item4</option>
-          </select>
-        </label>
-        <label htmlFor="item4">
-          test 1
-          <input type="radio" name="item1" id="1" />
-          test 2
-          <input type="radio" name="item1" id="2" />
-          test3
-          <input type="radio" name="item1" id="3" />
-        </label>
-        <button type="submit">Start free trial - pay after 7 days</button>
-      </form>
+      <div style={MainBox}>
+        <form style={{ display: 'flex', flexDirection: 'column' }}>
+          <label
+            htmlFor="Payment Method"
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              border: '1px green solid',
+            }}
+          >
+            <div>
+              <input type="radio" name="payment type" value="PayPal" />
+              PayPal
+            </div>
+            <div>
+              <input type="radio" name="payment type" value="Credit Card" />
+              Credit Card
+            </div>
+          </label>
+          <label
+            htmlFor="First Name"
+            style={{ display: 'flex', flexDirection: 'column' }}
+          >
+            First Name
+            <input type="text" name="First Name" id="" />
+          </label>
+          <label
+            htmlFor="Last Name"
+            style={{ display: 'flex', flexDirection: 'column' }}
+          >
+            Last Name
+            <input type="text" name="Last Name" id="" />
+          </label>
+          <label htmlFor="CC number">
+            Credit card number
+            <input type="text" placeholder="XXXX XXXX XXXX XXXX" />
+          </label>
+          <label htmlFor="Expiry date">
+            <input type="month" name="" id="" />
+          </label>
+        </form>
+      </div>
     </div>
   );
 };
