@@ -20,7 +20,6 @@ const Form1 = () => {
             display: 'flex',
             flexDirection: 'column',
             marginLeft: 30,
-            marginTop: 30,
             justifyContent: 'space-around',
             height: 800,
           }}
@@ -46,7 +45,10 @@ const Form1 = () => {
                 value="PayPal"
                 style={{ marginRight: 15 }}
               />
-              PayPal <img src={paypal} alt="paypal" style={ccImage} />
+              PayPal{' '}
+              <div style={{ marginLeft: 15 }}>
+                <img src={paypal} alt="paypal" style={ccImage} />
+              </div>
             </div>
             <div
               style={{
@@ -54,7 +56,12 @@ const Form1 = () => {
                 alignItems: 'center',
               }}
             >
-              <input type="radio" name="payment type" value="Credit Card" />
+              <input
+                type="radio"
+                name="payment type"
+                value="Credit Card"
+                style={{ marginRight: 15 }}
+              />
               Credit Card
               <div style={{ marginLeft: 15 }}>
                 <img src={visa} alt="visa" style={ccImage} />
@@ -66,7 +73,7 @@ const Form1 = () => {
               </div>
             </div>
           </label>
-          <h2>Paymet details</h2>
+          <h3>Paymet details</h3>
           <label
             htmlFor="First Name"
             style={{ display: 'flex', flexDirection: 'column', height: 60 }}
@@ -106,13 +113,24 @@ const Form1 = () => {
                 min="1"
                 max="12"
                 placeholder="MM"
-                style={{ border: '2px gray solid' }}
+                style={{
+                  border: '2px gray solid',
+                  height: 30,
+                  width: 40,
+                  marginRight: 10,
+                  paddingLeft: 10,
+                }}
               />
               <input
                 type="number"
                 name="expiry year"
                 placeholder="YYYY"
-                style={{ border: '2px gray solid' }}
+                style={{
+                  border: '2px gray solid',
+                  height: 30,
+                  width: 60,
+                  paddingLeft: 10,
+                }}
               />
             </div>
           </label>
@@ -122,17 +140,31 @@ const Form1 = () => {
               type="text"
               name="CVV number"
               placeholder="CVV"
-              style={{ border: '2px gray solid' }}
+              style={{
+                border: '2px gray solid',
+                paddingLeft: 10,
+                height: 30,
+                width: 45,
+              }}
             />
           </label>
           <section
             style={{
-              height: 50,
+              height: 40,
               display: 'flex',
               alignItems: 'center',
             }}
           >
-            By purchasing i agree to the terms and service.
+            <span style={{ color: 'gray' }}>By purchasing I agree to the</span>
+            <a
+              href="http://www.google.com"
+              style={{
+                color: 'RGBA(162, 209, 175, 1.00)',
+                textDecoration: 'none',
+              }}
+            >
+              Terms of Service.
+            </a>
           </section>
           <button
             type="submit"
@@ -147,10 +179,12 @@ const Form1 = () => {
             Start free trial - pay after 7 days
           </button>
           <section style={{ width: '90%' }}>
-            Your 7-day-trial will start today and end on 28 march 2019. Unless
-            you cancel during this period, you'll be charged $89.99 after 7
-            days. afterwards your subscription will renew automatically every
-            year, but you can cancel anytime. details can be found here.
+            <p>
+              Your 7-day-trial will start today and end on 28 march 2019. Unless
+              you cancel during this period, you'll be charged $89.99 after 7
+              days. afterwards your subscription will renew automatically every
+              year, but you can cancel anytime. details can be found here.
+            </p>
           </section>
         </form>
       </div>
