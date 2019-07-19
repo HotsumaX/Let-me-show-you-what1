@@ -6,21 +6,35 @@ const Form2 = () => {
   return (
     <div>
       <h2>New, simplified form</h2>
-      <div>
+      <div
+        style={{
+          width: '30em',
+          backgroundColor: 'white',
+          height: '40em',
+          display: 'flex',
+          justifyContent: 'center',
+        }}
+      >
         <form className="Main">
-          <label htmlFor="paypal" id="paypal" nesting="1">
-            <input type="radio" name="payment" id="paypal" value="paypal" />
-            paypal
-          </label>
-          <label htmlFor="creditdebit">
-            <input
-              type="radio"
-              name="payment"
-              id="creditdebit"
-              value="creditdebit"
-            />
-            Credit/Debit card
-          </label>
+          <header>
+            <h2>Payment details</h2>
+            <h4>All transactions are secure and encrypted</h4>
+          </header>
+          <section style={{ display: 'flex', flexDirection: 'column' }}>
+            <label htmlFor="paypal" id="paypal" nesting="1">
+              <input type="radio" name="payment" id="paypal" value="paypal" />
+              paypal
+            </label>
+            <label htmlFor="creditdebit">
+              <input
+                type="radio"
+                name="payment"
+                id="creditdebit"
+                value="creditdebit"
+              />
+              Credit/Debit card
+            </label>
+          </section>
           <label htmlFor="Name">
             Name on card{' '}
             <input

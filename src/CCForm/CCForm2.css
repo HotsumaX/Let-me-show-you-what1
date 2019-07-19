@@ -1,8 +1,7 @@
 .Main {
-  width: 30em;
-  background-color: white;
-  height: 50em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  height: 100%;
+  width: 90%;
 }

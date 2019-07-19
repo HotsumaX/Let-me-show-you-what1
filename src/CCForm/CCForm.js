@@ -10,7 +10,7 @@ const CCForm = () => {
         height: '70em',
         display: 'flex',
         justifyContent: 'space-around',
-        minWidth: '70em',
+        minWidth: '65em',
       }}
     >
       <Form1 />
