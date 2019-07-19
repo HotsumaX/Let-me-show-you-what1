@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import styles from './CCForm.styles';
 import paypal from './images/5.png';
@@ -9,8 +9,12 @@ import discover from './images/14.png';
 import diner from './images/10.png';
 import jcb from './images/16.png';
 
+import './CCForm.css';
+
 const Form1 = () => {
-  const { MainBox, ccImage } = styles.Form1;
+  const [color, setColor] = useState(false);
+
+  const { MainBox, ccImage, inputBox, inputBoxActive } = styles.Form1;
   return (
     <div>
       <h2>Current payment form</h2>
@@ -37,6 +41,7 @@ const Form1 = () => {
               style={{
                 display: 'flex',
                 alignItems: 'center',
+                marginBottom: 20,
               }}
             >
               <input
@@ -79,11 +84,7 @@ const Form1 = () => {
             style={{ display: 'flex', flexDirection: 'column', height: 60 }}
           >
             First Name
-            <input
-              type="text"
-              name="First Name"
-              style={{ height: 30, width: '90%', border: '2px gray solid' }}
-            />
+            <input type="text" name="First Name" className="inputbox" />
           </label>
           <label
             htmlFor="Last Name"
@@ -178,12 +179,22 @@ const Form1 = () => {
           >
             Start free trial - pay after 7 days
           </button>
-          <section style={{ width: '90%' }}>
+          <section style={{ width: '90%', color: 'gray' }}>
             <p>
               Your 7-day-trial will start today and end on 28 march 2019. Unless
               you cancel during this period, you'll be charged $89.99 after 7
               days. afterwards your subscription will renew automatically every
-              year, but you can cancel anytime. details can be found here.
+              year, but you can cancel anytime. details can be found{' '}
+              <a
+                href="http://www.google.com"
+                style={{
+                  color: 'RGBA(162, 209, 175, 1.00)',
+                  textDecoration: 'none',
+                }}
+              >
+                here
+              </a>
+              .
             </p>
           </section>
         </form>

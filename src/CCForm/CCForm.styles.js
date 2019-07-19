@@ -8,6 +8,16 @@ const styles = {
     ccImage: {
       height: 25,
     },
+    inputBox: {
+      height: 30,
+      width: '90%',
+      border: '2px gray solid',
+    },
+    inputBoxActive: {
+      border: '2px lightgreen solid',
+      height: 30,
+      width: '90%',
+    },
   },
 };
 

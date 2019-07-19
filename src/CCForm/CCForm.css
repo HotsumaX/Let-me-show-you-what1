@@ -1,0 +1,10 @@
+.inputbox {
+  height: 30px;
+  width: 90%;
+  border: 2px gray solid;
+}
+.inputbox:focus {
+  outline: none;
+  border: 2px solid lightgreen;
+  box-shadow: 0 0 5px lightgreen;
+}
