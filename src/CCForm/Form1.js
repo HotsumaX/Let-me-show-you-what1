@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import styles from './CCForm.styles';
 import paypal from './images/5.png';
@@ -12,20 +12,26 @@ import jcb from './images/16.png';
 import './CCForm.css';
 
 const Form1 = () => {
-  const [color, setColor] = useState(false);
+  const submitForm = event => {
+    event.preventDefault();
 
-  const { MainBox, ccImage, inputBox, inputBoxActive } = styles.Form1;
+    window.alert('Thank you for submitting your order');
+  };
+
+  const { MainBox, ccImage } = styles.Form1;
   return (
     <div>
       <h2>Current payment form</h2>
       <div style={MainBox}>
         <form
+          onSubmit={submitForm}
           style={{
             display: 'flex',
             flexDirection: 'column',
             marginLeft: 30,
             justifyContent: 'space-around',
             height: 800,
+            color: 'darkblue',
           }}
         >
           <label
@@ -48,9 +54,9 @@ const Form1 = () => {
                 type="radio"
                 name="payment type"
                 value="PayPal"
-                style={{ marginRight: 15 }}
+                className="radio-button"
               />
-              PayPal{' '}
+              PayPal
               <div style={{ marginLeft: 15 }}>
                 <img src={paypal} alt="paypal" style={ccImage} />
               </div>
@@ -65,7 +71,7 @@ const Form1 = () => {
                 type="radio"
                 name="payment type"
                 value="Credit Card"
-                style={{ marginRight: 15 }}
+                className="radio-button"
               />
               Credit Card
               <div style={{ marginLeft: 15 }}>
@@ -91,72 +97,61 @@ const Form1 = () => {
             style={{ display: 'flex', flexDirection: 'column' }}
           >
             Last Name
-            <input
-              type="text"
-              name="Last Name"
-              style={{ height: 30, width: '90%', border: '2px gray solid' }}
-            />
+            <input type="text" name="Last Name" className="inputbox" />
           </label>
           <label htmlFor="CC number">
             Credit card number
             <input
               type="text"
               placeholder="XXXX XXXX XXXX XXXX"
-              style={{ height: 30, width: '90%', border: '2px gray solid' }}
+              className="inputbox"
             />
           </label>
           <label htmlFor="Expiry date">
             Expiry date
-            <div>
+            <div style={{ marginTop: 10 }}>
               <input
                 type="number"
                 name="expiry month"
                 min="1"
                 max="12"
                 placeholder="MM"
-                style={{
-                  border: '2px gray solid',
-                  height: 30,
-                  width: 40,
-                  marginRight: 10,
-                  paddingLeft: 10,
-                }}
+                className="small-input-box"
               />
               <input
                 type="number"
                 name="expiry year"
                 placeholder="YYYY"
-                style={{
-                  border: '2px gray solid',
-                  height: 30,
-                  width: 60,
-                  paddingLeft: 10,
-                }}
+                className="year-input-box"
               />
             </div>
           </label>
-          <label htmlFor="CVV" style={{ height: 50 }}>
-            CVV <br />
-            <input
-              type="text"
-              name="CVV number"
-              placeholder="CVV"
-              style={{
-                border: '2px gray solid',
-                paddingLeft: 10,
-                height: 30,
-                width: 45,
-              }}
-            />
+          <label
+            htmlFor="CVV"
+            style={{ height: 50, display: 'flex', flexDirection: 'column' }}
+          >
+            CVV
+            <div>
+              <input
+                type="text"
+                name="CVV number"
+                placeholder="CVV"
+                className="ccv-box"
+              />
+            </div>
           </label>
           <section
             style={{
               height: 40,
               display: 'flex',
               alignItems: 'center',
+              marginTop: 10,
             }}
           >
-            <span style={{ color: 'gray' }}>By purchasing I agree to the</span>
+            <span style={{ color: 'gray' }}>
+              By purchasing I agree to the &nbsp;
+            </span>
+
             <a
               href="http://www.google.com"
               style={{
@@ -175,6 +170,9 @@ const Form1 = () => {
               color: 'white',
               backgroundColor: 'RGBA(108, 220, 137, 1.00)',
               fontSize: 18,
+              fontWeight: 100,
+              outline: 'none',
+              border: 'none',
             }}
           >
             Start free trial - pay after 7 days

@@ -2,8 +2,50 @@
   height: 30px;
   width: 90%;
   border: 2px gray solid;
+  margin-top: 10px;
+  padding-left: 10px;
 }
 .inputbox:focus {
+  outline: none;
+  border: 2px solid lightgreen;
+  box-shadow: 0 0 5px lightgreen;
+  padding-left: 10px;
+}
+.radio-button {
+  margin-right: 10px;
+}
+.small-input-box {
+  height: 30px;
+  border: 2px gray solid;
+  height: 30px;
+  width: 40px;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+.small-input-box:focus {
+  outline: none;
+  border: 2px solid lightgreen;
+  box-shadow: 0 0 5px lightgreen;
+}
+.year-input-box {
+  border: 2px gray solid;
+  height: 30px;
+  width: 60px;
+  padding-left: 10px;
+}
+.year-input-box:focus {
+  outline: none;
+  border: 2px solid lightgreen;
+  box-shadow: 0 0 5px lightgreen;
+}
+.ccv-box {
+  border: 2px gray solid;
+  padding-left: 10px;
+  height: 30px;
+  width: 45px;
+  margin-top: 10px;
+}
+.ccv-box:focus {
   outline: none;
   border: 2px solid lightgreen;
   box-shadow: 0 0 5px lightgreen;
