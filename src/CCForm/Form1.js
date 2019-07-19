@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable no-alert */
 import React from 'react';
 
 import styles from './CCForm.styles';
@@ -9,13 +11,13 @@ import discover from './images/14.png';
 import diner from './images/10.png';
 import jcb from './images/16.png';
 
-import './CCForm.css';
+import './CCForm1.css';
 
 const Form1 = () => {
   const submitForm = event => {
     event.preventDefault();
 
-    window.alert('Thank you for submitting your order');
+    alert('Thank you for submitting your order');
   };
 
   const { MainBox, ccImage } = styles.Form1;
