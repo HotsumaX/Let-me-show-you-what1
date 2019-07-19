@@ -87,28 +87,36 @@ const Form2 = () => {
               className="in-box"
             />
           </label>
-          <label htmlFor="Expiry date">
-            Expiry date
-            <input
-              type="month"
-              name="Expiry date"
-              id="Expiry date"
-              min="2019-07"
-              max="2025-12"
-              value="2019-07"
-            />
-          </label>
-          <label htmlFor="Security Code">
-            Security Code
-            <input
-              type="number"
-              name="Security Code"
-              id="Security Code"
-              min="000"
-              max="999"
-              placeholder="000"
-            />
-          </label>
+          <section
+            style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              width: '50%',
+            }}
+          >
+            <label htmlFor="Expiry date">
+              Expiry date <br />
+              <input
+                type="text"
+                name="Expiry date"
+                id="Expiry date"
+                placeholder="MM\YYYY"
+                className="sec-in-box"
+              />
+            </label>
+            <label htmlFor="Security Code">
+              Security Code <br />
+              <input
+                type="number"
+                name="Security Code"
+                id="Security Code"
+                min="000"
+                max="999"
+                placeholder="000"
+                className="sec-in-box"
+              />
+            </label>
+          </section>
           By purchasing I agree to the Terms of Service
           <button type="submit">Start free Trial - pay after 7 days</button>
           <section>
