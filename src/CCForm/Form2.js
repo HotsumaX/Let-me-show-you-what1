@@ -58,6 +58,15 @@ const Form2 = () => {
               placeholder="e.g Jamie Smith"
             />
           </label>
+          <label htmlFor="Card Number">
+            Card number
+            <input
+              type="number"
+              name="Card Number"
+              id="Card Number"
+              placeholder="0000 0000 0000 0000"
+            />
+          </label>
           <label htmlFor="Expiry date">
             Expiry date
             <input
