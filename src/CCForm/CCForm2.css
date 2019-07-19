@@ -4,4 +4,8 @@
   justify-content: space-around;
   height: 100%;
   width: 90%;
+  color: RGBA(57, 82, 99, 1);
+}
+.cc-image {
+  height: 30px;
 }

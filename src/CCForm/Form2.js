@@ -1,5 +1,9 @@
 import React from 'react';
 
+import paypal from './images/5.png';
+import visa from './images/1.png';
+import mastercard from './images/2.png';
+import amex from './images/22.png';
 import './CCForm2.css';
 
 const Form2 = () => {
@@ -20,10 +24,17 @@ const Form2 = () => {
             <h2>Payment details</h2>
             <h4>All transactions are secure and encrypted</h4>
           </header>
-          <section style={{ display: 'flex', flexDirection: 'column' }}>
+          <section
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              height: 60,
+              justifyContent: 'space-between',
+            }}
+          >
             <label htmlFor="paypal" id="paypal" nesting="1">
               <input type="radio" name="payment" id="paypal" value="paypal" />
-              paypal
+              paypal <img src={paypal} alt="paypal icon" className="cc-image" />
             </label>
             <label htmlFor="creditdebit">
               <input
@@ -33,10 +44,13 @@ const Form2 = () => {
                 value="creditdebit"
               />
               Credit/Debit card
+              <img src={visa} alt="visa" className="cc-image" />
+              <img src={mastercard} alt="mastercard" className="cc-image" />
+              <img src={amex} alt="american express" className="cc-image" />
             </label>
           </section>
           <label htmlFor="Name">
-            Name on card{' '}
+            Name on card
             <input
               type="text"
               name="Name on Card"
