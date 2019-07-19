@@ -32,11 +32,29 @@ const Form2 = () => {
               justifyContent: 'space-between',
             }}
           >
-            <label htmlFor="paypal" id="paypal" nesting="1">
+            <label
+              htmlFor="paypal"
+              id="paypal"
+              nesting="1"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                width: '30%',
+                justifyContent: 'space-between',
+              }}
+            >
               <input type="radio" name="payment" id="paypal" value="paypal" />
-              paypal <img src={paypal} alt="paypal icon" className="cc-image" />
+              PayPal <img src={paypal} alt="paypal icon" className="cc-image" />
             </label>
-            <label htmlFor="creditdebit">
+            <label
+              htmlFor="creditdebit"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                width: '70%',
+                justifyContent: 'space-between',
+              }}
+            >
               <input
                 type="radio"
                 name="payment"
@@ -56,6 +74,7 @@ const Form2 = () => {
               name="Name on Card"
               id="name"
               placeholder="e.g Jamie Smith"
+              className="in-box"
             />
           </label>
           <label htmlFor="Card Number">
@@ -65,6 +84,7 @@ const Form2 = () => {
               name="Card Number"
               id="Card Number"
               placeholder="0000 0000 0000 0000"
+              className="in-box"
             />
           </label>
           <label htmlFor="Expiry date">
