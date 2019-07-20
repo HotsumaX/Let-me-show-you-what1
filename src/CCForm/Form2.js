@@ -91,7 +91,7 @@ const Form2 = () => {
             style={{
               display: 'flex',
               justifyContent: 'space-between',
-              width: '50%',
+              width: '58%',
             }}
           >
             <label htmlFor="Expiry date">
@@ -117,9 +117,15 @@ const Form2 = () => {
               />
             </label>
           </section>
-          By purchasing I agree to the Terms of Service
-          <button type="submit">Start free Trial - pay after 7 days</button>
-          <section>
+          <div>
+            By purchasing I agree to the{' '}
+            <a href="http://www.google.com">Terms of Service</a>
+          </div>
+
+          <button type="submit" className="green-button">
+            Start free Trial - pay after 7 days
+          </button>
+          <section style={{ marginBottom: 30 }}>
             Your 7-day trial will start today and end on 2 April 2020. Unless
             you cancel during this period you'll be charged $79.99 after 7 days.
             Afterwards your subscription will renew automatically every year,

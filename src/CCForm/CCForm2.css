@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
-  width: 90%;
+  width: 80%;
   color: RGBA(57, 82, 99, 1);
 }
 .cc-image {
@@ -22,7 +22,7 @@
 }
 .sec-in-box {
   height: 3em;
-  width: 7em;
+  width: 8em;
   margin-top: 0.7em;
   padding-left: 5px;
 }
@@ -30,4 +30,8 @@
   outline: none;
   border: 2px solid lightgreen;
   box-shadow: 0 0 5px lightgreen;
+}
+.green-button {
+  height: 4em;
+  font-size: 12px;
 }
