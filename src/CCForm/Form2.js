@@ -118,7 +118,7 @@ const Form2 = () => {
               />
             </label>
           </section>
-          <div>
+          <div style={{ marginBottom: 10 }}>
             By purchasing I agree to the{' '}
             <a href="http://www.google.com">Terms of Service</a>
           </div>
@@ -126,11 +126,11 @@ const Form2 = () => {
           <button type="submit" className="green-button">
             Start free Trial - pay after 7 days
           </button>
-          <section style={{ marginBottom: 30 }}>
+          <section style={{ marginBottom: 40, marginTop: 20 }}>
             Your 7-day trial will start today and end on 2 April 2020. Unless
             you cancel during this period you'll be charged $79.99 after 7 days.
             Afterwards your subscription will renew automatically every year,
-            but you can cancel anytime.{' '}
+            but you can cancel anytime.
           </section>
         </form>
       </div>
