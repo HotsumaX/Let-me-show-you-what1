@@ -34,4 +34,8 @@
 .green-button {
   height: 4em;
   font-size: 12px;
+  background-color: lightgreen;
+  color: white;
+  border: none;
+  outline: none;
 }

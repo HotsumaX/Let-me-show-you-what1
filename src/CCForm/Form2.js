@@ -8,6 +8,11 @@ import amex from './images/22.png';
 import './CCForm2.css';
 
 const Form2 = () => {
+  const submitForm2 = event => {
+    event.preventDefault();
+    alert('Thank you for submitting Form 2');
+  };
+
   return (
     <div>
       <h2>New, simplified form</h2>
@@ -15,12 +20,12 @@ const Form2 = () => {
         style={{
           width: '30em',
           backgroundColor: 'white',
-          height: '40em',
+          height: '45em',
           display: 'flex',
           justifyContent: 'center',
         }}
       >
-        <form className="Main">
+        <form className="Main" onSubmit={submitForm2}>
           <header>
             <h2>Payment details</h2>
             <h4>All transactions are secure and encrypted</h4>
