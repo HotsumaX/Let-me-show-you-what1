@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 
 import paypal from './images/5.png';
@@ -51,7 +52,7 @@ const Form2 = () => {
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                width: '70%',
+                width: '80%',
                 justifyContent: 'space-between',
               }}
             >
