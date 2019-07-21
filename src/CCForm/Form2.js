@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 
@@ -45,7 +46,7 @@ const Form2 = () => {
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                width: '30%',
+                width: '34%',
                 justifyContent: 'space-between',
               }}
             >
@@ -123,15 +124,25 @@ const Form2 = () => {
               />
             </label>
           </section>
-          <div style={{ marginBottom: 10 }}>
+          <div style={{ marginBottom: 10, color: 'gray' }}>
             By purchasing I agree to the{' '}
-            <a href="http://www.google.com">Terms of Service</a>
+            <a href="http://www.google.com" style={{ color: 'gray' }}>
+              Terms of Service
+            </a>
+            .
           </div>
 
           <button type="submit" className="green-button">
             Start free Trial - pay after 7 days
           </button>
-          <section style={{ marginBottom: 40, marginTop: 20 }}>
+          <section
+            style={{
+              marginBottom: 40,
+              marginTop: 20,
+              fontSize: 15,
+              color: 'gray',
+            }}
+          >
             Your 7-day trial will start today and end on 2 April 2020. Unless
             you cancel during this period you'll be charged $79.99 after 7 days.
             Afterwards your subscription will renew automatically every year,
