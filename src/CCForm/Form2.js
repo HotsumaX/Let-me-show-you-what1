@@ -19,9 +19,9 @@ const Form2 = () => {
       <h2>New, simplified form</h2>
       <div
         style={{
-          width: '30em',
+          width: '27em',
           backgroundColor: 'white',
-          height: '45em',
+          height: '40em',
           display: 'flex',
           justifyContent: 'center',
         }}
@@ -46,11 +46,17 @@ const Form2 = () => {
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                width: '34%',
+                width: '36%',
                 justifyContent: 'space-between',
               }}
             >
-              <input type="radio" name="payment" id="paypal" value="paypal" />
+              <input
+                type="radio"
+                name="payment"
+                id="paypal"
+                value="paypal"
+                style={{ appearance: 'none', color: 'red' }}
+              />
               PayPal <img src={paypal} alt="paypal icon" className="cc-image" />
             </label>
             <label
@@ -58,7 +64,7 @@ const Form2 = () => {
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                width: '80%',
+                width: '87%',
                 justifyContent: 'space-between',
               }}
             >
@@ -98,7 +104,7 @@ const Form2 = () => {
             style={{
               display: 'flex',
               justifyContent: 'space-between',
-              width: '58%',
+              width: '65%',
             }}
           >
             <label htmlFor="Expiry date">
@@ -124,7 +130,14 @@ const Form2 = () => {
               />
             </label>
           </section>
-          <div style={{ marginBottom: 10, color: 'gray', fontSize: 12 }}>
+          <div
+            style={{
+              marginBottom: 10,
+              color: 'gray',
+              fontSize: 12,
+              marginTop: 10,
+            }}
+          >
             By purchasing I agree to the{' '}
             <a href="http://www.google.com" style={{ color: 'gray' }}>
               Terms of Service
@@ -138,9 +151,10 @@ const Form2 = () => {
           <section
             style={{
               marginBottom: 40,
-              marginTop: 20,
+              marginTop: 10,
               fontSize: 12,
               color: 'gray',
+              lineHeight: 1.7,
             }}
           >
             Your 7-day trial will start today and end on 2 April 2020. Unless

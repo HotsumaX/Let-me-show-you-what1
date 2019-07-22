@@ -15,6 +15,7 @@
   margin-top: 10px;
   padding-left: 10px;
   border: 2px solid lightgray;
+  color: gray;
 }
 .in-box:focus {
   outline: none;
