@@ -124,7 +124,7 @@ const Form2 = () => {
               />
             </label>
           </section>
-          <div style={{ marginBottom: 10, color: 'gray' }}>
+          <div style={{ marginBottom: 10, color: 'gray', fontSize: 12 }}>
             By purchasing I agree to the{' '}
             <a href="http://www.google.com" style={{ color: 'gray' }}>
               Terms of Service
@@ -139,7 +139,7 @@ const Form2 = () => {
             style={{
               marginBottom: 40,
               marginTop: 20,
-              fontSize: 15,
+              fontSize: 12,
               color: 'gray',
             }}
           >
