@@ -2,6 +2,8 @@ import React from 'react';
 import Form1 from './Form1';
 import Form2 from './Form2';
 
+// item is from https://dribbble.com/shots/6766389-Payment-Form/attachments
+
 const CCForm = () => {
   return (
     <div
