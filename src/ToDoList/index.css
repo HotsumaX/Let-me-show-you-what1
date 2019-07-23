@@ -3,6 +3,8 @@
   background-color: #66ccff;
   font-family: sans-serif;
   height: 30em;
+  display: flex;
+  flex-direction: column;
 }
 
 #container {
