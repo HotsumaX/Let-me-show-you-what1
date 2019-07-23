@@ -6,6 +6,7 @@ import Home from './Home';
 import Dash from './Dash/index';
 import Shop from './Shop';
 import CCForm from './CCForm';
+import ToDoList from './ToDoList';
 
 const styles = {
   NavBar: {
@@ -44,6 +45,7 @@ const NavBar = () => {
       <Link to="/Shop">Shop</Link>
       <Link to="Dashboard">Dashboard</Link>
       <Link to="CCForm">Credit Card Form</Link>
+      <Link to="ToDoList">To Do List</Link>
     </div>
   );
 };
@@ -67,6 +69,7 @@ const App = () => {
           <Shop path="/Shop" />
           <Dash path="/Dashboard" />
           <CCForm path="/CCForm" />
+          <ToDoList path="/ToDoList" />
         </Router>
         <BotSec />
       </div>
