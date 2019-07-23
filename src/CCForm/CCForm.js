@@ -6,17 +6,19 @@ import Form2 from './Form2';
 
 const CCForm = () => {
   return (
-    <div
-      style={{
-        backgroundColor: 'RGBA(241, 246, 245, 1.00)',
-        height: '70em',
-        display: 'flex',
-        justifyContent: 'space-around',
-        minWidth: '65em',
-      }}
-    >
-      <Form1 />
-      <Form2 />
+    <div style={{ backgroundColor: 'RGBA(241, 246, 245, 1.00)' }}>
+      <div
+        style={{
+          height: '70em',
+          display: 'flex',
+          justifyContent: 'space-around',
+          minWidth: '65em',
+          maxWidth: '90em',
+        }}
+      >
+        <Form1 />
+        <Form2 />
+      </div>
     </div>
   );
 };
