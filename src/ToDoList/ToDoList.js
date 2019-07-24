@@ -27,12 +27,12 @@ const ToDoList = () => {
     }
   };
 
-  const TodoItems = props => {
+  const TodoItems = ({ deleteItem, entries }) => {
     const createTasks = item => {
       return (
         <div
-          onClick={() => props.deleteItem(item.key)}
-          onKeyPress={() => props.deleteItem(item.key)}
+          onClick={() => deleteItem(item.key)}
+          onKeyPress={() => deleteItem(item.key)}
           role="button"
           tabIndex={0}
         >
@@ -40,7 +40,7 @@ const ToDoList = () => {
         </div>
       );
     };
-    const todoEntries = props.entries;
+    const todoEntries = entries;
     const listItems = todoEntries.map(createTasks);
 
     return <ul className="theList">{listItems}</ul>;
@@ -50,8 +50,6 @@ const ToDoList = () => {
     const filteredItems = items.filter(item => item.key !== key);
     setItems(filteredItems);
   };
-
-  deleteItem.propTypes = {};
 
   return (
     <div className="app-body">
