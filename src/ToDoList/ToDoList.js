@@ -51,6 +51,8 @@ const ToDoList = () => {
     setItems(filteredItems);
   };
 
+  deleteItem.propTypes = {};
+
   return (
     <div className="app-body">
       <div className="todoListMain">
