@@ -13,7 +13,7 @@ const ToDoList = () => {
 
   const handleInput = event => {
     const itemText = event.target.value;
-    setCurrentItem({ text: itemText, key: Date.now() });
+    setCurrentItem({ text: itemText, key: Date().toLocaleString() });
   };
 
   const addItem = event => {
@@ -28,16 +28,16 @@ const ToDoList = () => {
   };
 
   const TodoItems = ({ deleteItem, entries }) => {
-    const createTasks = item => {
+    const createTasks = ({ key, text }) => {
       return (
         <div
-          onClick={() => deleteItem(item.key)}
-          onKeyPress={() => deleteItem(item.key)}
+          onClick={() => deleteItem(key)}
+          onKeyPress={() => deleteItem(key)}
           role="button"
           tabIndex={0}
         >
-          <li key={item.key}>
-            {item.text} @ {item.key}
+          <li key={key}>
+            {text} @ {key}
           </li>
         </div>
       );
