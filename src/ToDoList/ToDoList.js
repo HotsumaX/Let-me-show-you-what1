@@ -36,7 +36,9 @@ const ToDoList = () => {
           role="button"
           tabIndex={0}
         >
-          <li key={item.key}>{item.text}</li>
+          <li key={item.key}>
+            {item.text} @ {item.key}
+          </li>
         </div>
       );
     };
