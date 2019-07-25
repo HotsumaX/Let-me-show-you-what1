@@ -13,7 +13,10 @@ const ToDoList = () => {
 
   const handleInput = event => {
     const itemText = event.target.value;
-    setCurrentItem({ text: itemText, key: Date().toLocaleString() });
+    setCurrentItem({
+      text: itemText,
+      key: Date(),
+    });
   };
 
   const addItem = event => {
