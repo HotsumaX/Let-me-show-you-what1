@@ -18,7 +18,7 @@ const styles = {
     justifyContent: 'space-around',
     alignItems: 'center',
     paddingLeft: '3%',
-    minWidth: '25em',
+    minWidth: '35em',
   },
   BotSec: {
     backgroundColor: 'green',
