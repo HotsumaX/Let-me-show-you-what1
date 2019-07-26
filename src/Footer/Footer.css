@@ -18,3 +18,7 @@
     background: mistyrose;
   }
 }
+
+.main-body {
+  min-height: 30em;
+}

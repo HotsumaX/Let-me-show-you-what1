@@ -13,12 +13,12 @@ const styles = {
   NavBar: {
     fontSize: 30,
     backgroundColor: 'green',
-    height: 70,
+    minHeight: 70,
     display: 'flex',
     justifyContent: 'space-around',
     alignItems: 'center',
     paddingLeft: '3%',
-    minWidth: '35em',
+    flexWrap: 'wrap',
   },
   BotSec: {
     backgroundColor: 'green',
@@ -43,8 +43,8 @@ const NavBar = () => {
   return (
     <div style={styles.NavBar}>
       <Link to="/">Home</Link>
-      <Link to="/Blog">Blog</Link>
-      <Link to="/Shop">Shop</Link>
+      <Link to="Blog">Blog</Link>
+      <Link to="Shop">Shop</Link>
       <Link to="Dashboard">Dashboard</Link>
       <Link to="CCForm">Credit Card Form</Link>
       <Link to="ToDoList">To Do List</Link>
@@ -68,12 +68,12 @@ const App = () => {
       <div style={styles.contentWraper}>
         <Router>
           <Home path="/" />
-          <Blog path="/Blog" />
-          <Shop path="/Shop" />
-          <Dash path="/Dashboard" />
-          <CCForm path="/CCForm" />
-          <ToDoList path="/ToDoList" />
-          <Footer path="/Footer" />
+          <Blog path="Blog" />
+          <Shop path="Shop" />
+          <Dash path="Dashboard" />
+          <CCForm path="CCForm" />
+          <ToDoList path="ToDoList" />
+          <Footer path="Footer" />
         </Router>
         <BotSec />
       </div>
