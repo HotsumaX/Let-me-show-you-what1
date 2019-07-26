@@ -7,6 +7,7 @@ import Dash from './Dash/index';
 import Shop from './Shop';
 import CCForm from './CCForm';
 import ToDoList from './ToDoList';
+import Footer from './Footer';
 
 const styles = {
   NavBar: {
@@ -17,6 +18,7 @@ const styles = {
     justifyContent: 'space-around',
     alignItems: 'center',
     paddingLeft: '3%',
+    minWidth: '25em',
   },
   BotSec: {
     backgroundColor: 'green',
@@ -46,6 +48,7 @@ const NavBar = () => {
       <Link to="Dashboard">Dashboard</Link>
       <Link to="CCForm">Credit Card Form</Link>
       <Link to="ToDoList">To Do List</Link>
+      <Link to="Footer">Footer Clone</Link>
     </div>
   );
 };
@@ -70,6 +73,7 @@ const App = () => {
           <Dash path="/Dashboard" />
           <CCForm path="/CCForm" />
           <ToDoList path="/ToDoList" />
+          <Footer path="/Footer" />
         </Router>
         <BotSec />
       </div>
