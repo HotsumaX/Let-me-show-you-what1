@@ -22,11 +22,11 @@
 .main-body {
   min-height: 30em;
   display: flex;
+  flex-direction: column;
 }
-.links {
+.accordion {
   display: flex;
   justify-content: space-around;
-  max-width: 40em;
   flex-wrap: wrap;
 }
 li {
