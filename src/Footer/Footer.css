@@ -21,4 +21,14 @@
 
 .main-body {
   min-height: 30em;
+  display: flex;
+}
+.links {
+  display: flex;
+  justify-content: space-around;
+  max-width: 40em;
+  flex-wrap: wrap;
+}
+li {
+  list-style-type: none;
 }

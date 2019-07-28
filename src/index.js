@@ -37,18 +37,36 @@ const styles = {
   contentWraper: {
     paddingBottom: '2.5rem',
   },
+  link: {
+    marginLeft: 10,
+    marginRight: 10,
+  },
 };
 
 const NavBar = () => {
   return (
     <div style={styles.NavBar}>
-      <Link to="/">Home</Link>
-      <Link to="Blog">Blog</Link>
-      <Link to="Shop">Shop</Link>
-      <Link to="Dashboard">Dashboard</Link>
-      <Link to="CCForm">Credit Card Form</Link>
-      <Link to="ToDoList">To Do List</Link>
-      <Link to="Footer">Footer Clone</Link>
+      <Link to="/" style={styles.link}>
+        Home
+      </Link>
+      <Link to="Blog" style={styles.link}>
+        Blog
+      </Link>
+      <Link to="Shop" style={styles.link}>
+        Shop
+      </Link>
+      <Link to="Dashboard" style={styles.link}>
+        Dashboard
+      </Link>
+      <Link to="CCForm" style={styles.link}>
+        Credit Card Form
+      </Link>
+      <Link to="ToDoList" style={styles.link}>
+        To Do List
+      </Link>
+      <Link to="Footer" style={styles.link}>
+        Footer Clone
+      </Link>
     </div>
   );
 };
