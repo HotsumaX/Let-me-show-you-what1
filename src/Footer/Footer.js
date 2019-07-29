@@ -53,19 +53,21 @@ const Footer = () => {
             </ul>
           </section>
         </div>
-        <section
-          style={{ maxWidth: 390, display: 'flex', flexDirection: 'column' }}
-        >
-          <h4>Recent News</h4>
-          <img
-            src={inMobile}
-            alt="mobile main"
-            style={{ width: '100%', height: 'auto', maxWidth: '300px' }}
-          />
-          <strong>Meet the new InVision mobile app:</strong> now with studio
-          mirroring and freehand to help you design better faster, together-on
-          the go.
-        </section>
+        <div>
+          <section
+            style={{ maxWidth: 325, display: 'flex', flexDirection: 'column' }}
+          >
+            <h4>Recent News</h4>
+            <img
+              src={inMobile}
+              alt="mobile main"
+              style={{ width: '100%', height: 'auto', maxWidth: 320 }}
+            />
+            <strong>Meet the new InVision mobile app:</strong> now with studio
+            mirroring and freehand to help you design better faster, together-on
+            the go.
+          </section>
+        </div>
       </div>
 
       <div
