@@ -83,17 +83,17 @@ const Footer = () => {
         <div className="copywrite">© inVisionApp Inc. All rights reserved.</div>
         <div className="link-box-main">
           <div className="link-box">
-            <a href="http://www.google.com">terms of service</a>
-            <a href="http://www.google.com">pricavy policy</a>
-            <a href="http://www.google.com">security</a>
-            <a href="http://www.google.com">sitemap</a>
+            <a href="http://www.google.com">Terms of Service</a>
+            <a href="http://www.google.com">Pricavy Policy</a>
+            <a href="http://www.google.com">Security</a>
+            <a href="http://www.google.com">Sitemap</a>
           </div>
           <div className="media-links">
-            <a href="http://wwww.google.com">Tw</a>
-            <a href="http://wwww.google.com">Db</a>
-            <a href="http://wwww.google.com">Ig</a>
-            <a href="http://wwww.google.com">Fb</a>
-            <a href="http://wwww.google.com">Rss</a>
+            <a href="http://www.google.com">Tw</a>
+            <a href="http://www.google.com">Db</a>
+            <a href="http://www.google.com">Ig</a>
+            <a href="http://www.google.com">Fb</a>
+            <a href="http://www.google.com">Rss</a>
           </div>
         </div>
       </div>
