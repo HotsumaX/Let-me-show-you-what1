@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="main-body">
       <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-        <div style={{ width: '8em' }}>invision image</div>
+        <div style={{ minWidth: '8em' }}>invision image</div>
         <div className="accordion">
           <section>
             <h4>Contact</h4>
@@ -55,7 +55,11 @@ const Footer = () => {
         </div>
         <div>
           <section
-            style={{ maxWidth: 325, display: 'flex', flexDirection: 'column' }}
+            style={{
+              maxWidth: 325,
+              display: 'flex',
+              flexDirection: 'column',
+            }}
           >
             <h4>Recent News</h4>
             <img
@@ -76,7 +80,7 @@ const Footer = () => {
       </div>
 
       <div className="media-box">
-        <div className="copywrite">invisionApp inc. all rights reserved.</div>
+        <div className="copywrite">inVisionApp inc. all rights reserved.</div>
         <div className="link-box-main">
           <div className="link-box">
             <a href="http://www.google.com">terms of service</a>
