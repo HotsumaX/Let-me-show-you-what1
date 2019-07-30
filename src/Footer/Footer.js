@@ -6,50 +6,50 @@ import './Footer.css';
 const Footer = () => {
   return (
     <div className="main-body">
-      <div style={{ display: 'flex' }}>
-        <div style={{ width: '15em' }}>invision image</div>
+      <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+        <div style={{ width: '8em' }}>invision image</div>
         <div className="accordion">
           <section>
-            <h3>contact</h3>
+            <h4>Contact</h4>
             <ul>
-              <li>contact in vision</li>
+              <li>Contact in Vision</li>
             </ul>
           </section>
           <section>
-            <h3>about</h3>
+            <h4>About</h4>
             <ul>
-              <li>about invision</li>
-              <li>invition for startups</li>
-              <li>pricing</li>
-              <li>students and teachers</li>
-              <li>media kit</li>
-              <li>jobs</li>
+              <li>About Invision</li>
+              <li>Invition For Startups</li>
+              <li>Pricing</li>
+              <li>Students and Teachers</li>
+              <li>Media Kit</li>
+              <li>Jobs</li>
             </ul>
           </section>
           <section>
-            <h3>platform</h3>
+            <h4>Platform</h4>
             <ul>
-              <li>freehand</li>
-              <li>boards</li>
-              <li>studio</li>
-              <li>craft</li>
-              <li>prototype</li>
-              <li>inspect</li>
-              <li>dsm</li>
-              <li>integrations</li>
+              <li>Freehand</li>
+              <li>Boards</li>
+              <li>Studio</li>
+              <li>Craft</li>
+              <li>Prototype</li>
+              <li>Inspect</li>
+              <li>Dsm</li>
+              <li>Integrations</li>
             </ul>
           </section>
           <section>
-            <h3>resorces</h3>
+            <h4>Resorces</h4>
             <ul>
-              <li>blog</li>
+              <li>Blog</li>
               <li>Design Resources</li>
-              <li>product training</li>
-              <li>help center</li>
-              <li>knowledge base</li>
-              <li>community</li>
-              <li>design defined</li>
-              <li>marketplace</li>
+              <li>Product Training</li>
+              <li>Help Center</li>
+              <li>Knowledge Base</li>
+              <li>Community</li>
+              <li>Design Defined</li>
+              <li>Marketplace</li>
             </ul>
           </section>
         </div>
@@ -70,26 +70,34 @@ const Footer = () => {
         </div>
       </div>
 
-      <div
-        style={{
-          display: 'flex',
-          width: '100%',
-          justifyContent: 'space-around',
-        }}
-      >
-        <div>invisionApp inc. all rights reserved.</div>
-        <div>
-          <a href="http://www.google.com">terms of service</a>
-          <a href="http://www.google.com">pricavy policy</a>
-          <a href="http://www.google.com">security</a>
-          <a href="http://www.google.com">sitemap</a>
-        </div>
-        <div className="media-links">
-          <a href="http://wwww.google.com">tw</a>
-          <a href="http://wwww.google.com">db</a>
-          <a href="http://wwww.google.com">Ig</a>
-          <a href="http://wwww.google.com">Fb</a>
-          <a href="http://wwww.google.com">Rss</a>
+      <div className="media-box">
+        <div className="copywrite">invisionApp inc. all rights reserved.</div>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'space-around',
+            minWidth: '75%',
+          }}
+        >
+          <div
+            style={{
+              width: 350,
+              display: 'flex',
+              justifyContent: 'space-between',
+            }}
+          >
+            <a href="http://www.google.com">terms of service</a>
+            <a href="http://www.google.com">pricavy policy</a>
+            <a href="http://www.google.com">security</a>
+            <a href="http://www.google.com">sitemap</a>
+          </div>
+          <div className="media-links">
+            <a href="http://wwww.google.com">Tw</a>
+            <a href="http://wwww.google.com">Db</a>
+            <a href="http://wwww.google.com">Ig</a>
+            <a href="http://wwww.google.com">Fb</a>
+            <a href="http://wwww.google.com">Rss</a>
+          </div>
         </div>
       </div>
     </div>
