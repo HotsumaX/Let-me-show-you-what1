@@ -61,7 +61,12 @@ const Footer = () => {
             <img
               src={inMobile}
               alt="mobile main"
-              style={{ width: '100%', height: 'auto', maxWidth: 320 }}
+              style={{
+                width: '100%',
+                height: 'auto',
+                maxWidth: 320,
+                marginBottom: 15,
+              }}
             />
             <strong>Meet the new InVision mobile app:</strong> now with studio
             mirroring and freehand to help you design better faster, together-on
@@ -72,20 +77,8 @@ const Footer = () => {
 
       <div className="media-box">
         <div className="copywrite">invisionApp inc. all rights reserved.</div>
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'space-around',
-            minWidth: '75%',
-          }}
-        >
-          <div
-            style={{
-              width: 350,
-              display: 'flex',
-              justifyContent: 'space-between',
-            }}
-          >
+        <div className="link-box-main">
+          <div className="link-box">
             <a href="http://www.google.com">terms of service</a>
             <a href="http://www.google.com">pricavy policy</a>
             <a href="http://www.google.com">security</a>

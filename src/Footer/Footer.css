@@ -26,6 +26,9 @@
   .accordion {
     justify-content: stretch;
   }
+  .link-box-main {
+    margin-top: 20px;
+  }
 }
 @media only screen and (min-width: 961px) {
   .main-body {
@@ -75,4 +78,14 @@ li {
 }
 h4 {
   margin-bottom: 15px;
+}
+.link-box {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+.link-box-main {
+  display: flex;
+  justify-content: space-around;
+  min-width: 75%;
 }
