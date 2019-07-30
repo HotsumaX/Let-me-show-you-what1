@@ -53,7 +53,7 @@ const Footer = () => {
             </ul>
           </section>
         </div>
-        <div>
+        <div style={{ paddingRight: 40 }}>
           <section
             style={{
               maxWidth: 325,
@@ -80,7 +80,7 @@ const Footer = () => {
       </div>
 
       <div className="media-box">
-        <div className="copywrite">inVisionApp inc. all rights reserved.</div>
+        <div className="copywrite">© inVisionApp Inc. All rights reserved.</div>
         <div className="link-box-main">
           <div className="link-box">
             <a href="http://www.google.com">terms of service</a>

@@ -67,6 +67,8 @@ li {
 }
 .copywrite {
   min-width: 5em;
+  color: lightgray;
+  font-weight: lighter;
 }
 
 .accordion section ul li {
