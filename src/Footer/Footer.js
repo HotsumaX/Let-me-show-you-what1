@@ -6,8 +6,8 @@ import './Footer.css';
 const Footer = () => {
   return (
     <div className="main-body">
-      <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-        <div style={{ minWidth: '8em' }}>invision image</div>
+      <div className="main-body-upper">
+        <div className="invision-image">invision image</div>
         <div className="accordion">
           <section>
             <h4>Contact</h4>
@@ -59,6 +59,7 @@ const Footer = () => {
               maxWidth: 325,
               display: 'flex',
               flexDirection: 'column',
+              fontSize: 15,
             }}
           >
             <h4>Recent News</h4>
@@ -72,9 +73,11 @@ const Footer = () => {
                 marginBottom: 15,
               }}
             />
-            <strong>Meet the new InVision mobile app:</strong> now with studio
-            mirroring and freehand to help you design better faster, together-on
-            the go.
+            <strong>Meet the new InVision mobile app:</strong>
+            <span style={{ color: 'RGBA(162, 164, 170, 1.00)' }}>
+              Now with studio mirroring and freehand to help you design better
+              faster, together-on the go.
+            </span>
           </section>
         </div>
       </div>

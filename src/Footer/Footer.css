@@ -7,6 +7,12 @@
   .main-body {
     background: red;
   }
+  .main-body-upper {
+    flex-direction: column;
+  }
+  .accordion {
+    flex-direction: column;
+  }
 }
 @media only screen and (min-width: 501px) and (max-width: 960px) {
   .main-body {
@@ -74,6 +80,7 @@ li {
 .accordion section ul li {
   margin-bottom: 10px;
   transition: 0.2s;
+  color: RGBA(74, 78, 86, 1);
 }
 .accordion section ul li:hover {
   color: palevioletred;
@@ -95,9 +102,19 @@ h4 {
   justify-content: space-around;
   min-width: 75%;
 }
-a {
+.link-box a,
+.media-links a {
   text-decoration: none;
+  color: RGBA(74, 78, 86, 1);
 }
 .media-links a {
   font-weight: 600;
+}
+.main-body-upper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.invision-image {
+  min-width: 8em;
 }
