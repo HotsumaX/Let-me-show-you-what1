@@ -65,7 +65,7 @@ const NavBar = () => {
         To Do List
       </Link>
       <Link to="Footer" style={styles.link}>
-        Footer Clone
+        Footer Clone (incomplete)
       </Link>
     </div>
   );
