@@ -9,7 +9,6 @@ const CCForm = () => {
     <div style={{ backgroundColor: 'RGBA(241, 246, 245, 1.00)' }}>
       <div
         style={{
-          marginTop: '5em',
           height: '70em',
           display: 'flex',
           justifyContent: 'space-around',
