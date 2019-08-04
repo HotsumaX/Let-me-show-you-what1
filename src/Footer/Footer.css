@@ -8,6 +8,7 @@
     background: red;
   }
   .main-body-upper {
+    display: flex;
     flex-direction: column;
   }
   .accordion {
