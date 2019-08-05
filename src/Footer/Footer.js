@@ -77,23 +77,49 @@ const Footer2 = () => {
             faster, together-on the go.
           </span>
         </div>
-        <div>
-          <div>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}
+        >
+          <div
+            style={{
+              display: 'flex',
+              width: '80%',
+              justifyContent: 'space-around',
+              marginBottom: 30,
+            }}
+          >
             <a href="http://www.google.com">Tw</a>
             <a href="http://www.google.com">Db</a>
             <a href="http://www.google.com">Ig</a>
             <a href="http://www.google.com">Fb</a>
             <a href="http://www.google.com">Rss</a>
           </div>
-          <div>© inVisionApp Inc. All rights reserved.</div>
-          <div>
-            <div>
-              <a href="http://www.google.com">Terms of Service</a>
-              <a href="http://www.google.com">Pricavy Policy</a>
-              <a href="http://www.google.com">Security</a>
-              <a href="http://www.google.com">Sitemap</a>
-            </div>
+          <div
+            style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              width: '60%',
+              marginBottom: 30,
+            }}
+          >
+            <a href="http://www.google.com" style={{ width: '50%' }}>
+              Terms of Service
+            </a>
+            <a href="http://www.google.com" style={{ width: '50%' }}>
+              Pricavy Policy
+            </a>
+            <a href="http://www.google.com" style={{ width: '50%' }}>
+              Security
+            </a>
+            <a href="http://www.google.com" style={{ width: '50%' }}>
+              Sitemap
+            </a>
           </div>
+          <div>© inVisionApp Inc. All rights reserved.</div>
         </div>
       </div>
     </div>
