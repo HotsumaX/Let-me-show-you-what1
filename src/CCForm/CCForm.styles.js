@@ -4,6 +4,7 @@ const styles = {
       width: '30em',
       backgroundColor: 'white',
       paddingTop: 15,
+      marginTop: 30,
     },
     ccImage: {
       height: 25,

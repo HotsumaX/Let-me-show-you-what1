@@ -22,7 +22,7 @@ const Form1 = () => {
 
   const { MainBox, ccImage } = styles.Form1;
   return (
-    <div>
+    <div style={{ marginTop: 30 }}>
       <h2>Current payment form</h2>
       <div style={MainBox}>
         <form

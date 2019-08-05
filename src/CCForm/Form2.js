@@ -15,7 +15,7 @@ const Form2 = () => {
   };
 
   return (
-    <div>
+    <div style={{ marginTop: 30 }}>
       <h2>New, simplified form</h2>
       <div
         style={{
@@ -24,6 +24,7 @@ const Form2 = () => {
           height: '40em',
           display: 'flex',
           justifyContent: 'center',
+          marginTop: 30,
         }}
       >
         <form className="Main" onSubmit={submitForm2}>
