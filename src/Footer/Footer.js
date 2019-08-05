@@ -3,6 +3,10 @@ import React from 'react';
 import inMobile from './images/Muzli-770x618.png';
 import './Footer.css';
 
+const Footer2 = () => {
+  return <div>something</div>;
+};
+
 const Footer = () => {
   return (
     <div className="main-body">
@@ -99,6 +103,9 @@ const Footer = () => {
             <a href="http://www.google.com">Rss</a>
           </div>
         </div>
+      </div>
+      <div>
+        <Footer2 />
       </div>
     </div>
   );
