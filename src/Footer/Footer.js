@@ -14,7 +14,16 @@ const Footer2 = () => {
         marginBottom: 100,
       }}
     >
-      <div style={{ border: '1px red solid', width: 500, minHeight: 800 }}>
+      <div
+        style={{
+          border: '1px red solid',
+          width: 500,
+          minHeight: 800,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+        }}
+      >
         inVision image
         <section>
           <h4>Contact</h4>
@@ -64,17 +73,27 @@ const Footer2 = () => {
           src={inMobile}
           alt="mobile main"
           style={{
-            width: '100%',
+            width: '90%',
             height: 'auto',
-            maxWidth: 320,
             marginBottom: 15,
           }}
         />
-        <div style={{ marginBottom: 20 }}>
-          <strong>Meet the new InVision mobile app:</strong>
-          <span style={{ color: 'RGBA(162, 164, 170, 1.00)' }}>
-            Now with studio mirroring and freehand to help you design better
-            faster, together-on the go.
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            marginBottom: 20,
+            width: '80%',
+            alignItems: 'center',
+            border: '1px blue solid',
+          }}
+        >
+          <span>
+            <strong>Meet the new InVision mobile app:</strong>
+            <span style={{ color: 'RGBA(162, 164, 170, 1.00)' }}>
+              Now with studio mirroring and freehand to help you design better
+              faster, together-on the go.
+            </span>
           </span>
         </div>
         <div
@@ -102,24 +121,33 @@ const Footer2 = () => {
             style={{
               display: 'flex',
               flexWrap: 'wrap',
-              width: '60%',
+              width: '80%',
               marginBottom: 30,
+              justifyContent: 'space-between',
             }}
           >
-            <a href="http://www.google.com" style={{ width: '50%' }}>
+            <a
+              href="http://www.google.com"
+              style={{ width: '47%', textAlign: 'right', marginBottom: 10 }}
+            >
               Terms of Service
             </a>
-            <a href="http://www.google.com" style={{ width: '50%' }}>
+            <a href="http://www.google.com" style={{ width: '47%' }}>
               Pricavy Policy
             </a>
-            <a href="http://www.google.com" style={{ width: '50%' }}>
+            <a
+              href="http://www.google.com"
+              style={{ width: '47%', textAlign: 'right' }}
+            >
               Security
             </a>
-            <a href="http://www.google.com" style={{ width: '50%' }}>
+            <a href="http://www.google.com" style={{ width: '47%' }}>
               Sitemap
             </a>
           </div>
-          <div>© inVisionApp Inc. All rights reserved.</div>
+          <div style={{ marginBottom: 30 }}>
+            © inVisionApp Inc. All rights reserved.
+          </div>
         </div>
       </div>
     </div>
