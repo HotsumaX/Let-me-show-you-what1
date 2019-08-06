@@ -24,14 +24,16 @@ const Footer2 = () => {
           alignItems: 'center',
         }}
       >
-        inVision image
-        <section>
+        <div style={{ width: '90%', marginTop: 30, marginBottom: 20 }}>
+          inVision image
+        </div>
+        <section style={{ border: '1px green solid', width: '80%' }}>
           <h4>Contact</h4>
           <ul>
             <li>Contact in Vision</li>
           </ul>
         </section>
-        <section>
+        <section style={{ border: '1px green solid', width: '80%' }}>
           <h4>About</h4>
           <ul>
             <li>About Invision</li>
@@ -42,7 +44,7 @@ const Footer2 = () => {
             <li>Jobs</li>
           </ul>
         </section>
-        <section>
+        <section style={{ border: '1px green solid', width: '80%' }}>
           <h4>Platform</h4>
           <ul>
             <li>Freehand</li>
@@ -55,7 +57,7 @@ const Footer2 = () => {
             <li>Integrations</li>
           </ul>
         </section>
-        <section>
+        <section style={{ border: '1px green solid', width: '80%' }}>
           <h4>Resorces</h4>
           <ul>
             <li>Blog</li>
@@ -68,7 +70,9 @@ const Footer2 = () => {
             <li>Marketplace</li>
           </ul>
         </section>
-        <h4>Recent News</h4>
+        <div style={{ width: '80%', marginBottom: -15, marginTop: 30 }}>
+          <h4>Recent News</h4>
+        </div>
         <img
           src={inMobile}
           alt="mobile main"
@@ -83,9 +87,10 @@ const Footer2 = () => {
             display: 'flex',
             flexDirection: 'column',
             marginBottom: 20,
-            width: '80%',
+            width: '90%',
             alignItems: 'center',
             border: '1px blue solid',
+            fontSize: 14,
           }}
         >
           <span>
@@ -106,8 +111,8 @@ const Footer2 = () => {
           <div
             style={{
               display: 'flex',
-              width: '80%',
-              justifyContent: 'space-around',
+              width: '90%',
+              justifyContent: 'space-between',
               marginBottom: 30,
             }}
           >
