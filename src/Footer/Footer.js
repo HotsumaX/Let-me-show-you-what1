@@ -112,7 +112,7 @@ const Footer2 = () => {
             style={{
               display: 'flex',
               width: '90%',
-              justifyContent: 'space-between',
+              justifyContent: 'space-around',
               marginBottom: 30,
             }}
           >
