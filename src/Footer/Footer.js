@@ -27,13 +27,13 @@ const Footer2 = () => {
         <div style={{ width: '90%', marginTop: 30, marginBottom: 20 }}>
           inVision image
         </div>
-        <section style={{ border: '1px green solid', width: '80%' }}>
+        <section style={{ border: '1px green solid', width: '90%' }}>
           <h4>Contact</h4>
           <ul>
             <li>Contact in Vision</li>
           </ul>
         </section>
-        <section style={{ border: '1px green solid', width: '80%' }}>
+        <section style={{ border: '1px green solid', width: '90%' }}>
           <h4>About</h4>
           <ul>
             <li>About Invision</li>
@@ -44,7 +44,7 @@ const Footer2 = () => {
             <li>Jobs</li>
           </ul>
         </section>
-        <section style={{ border: '1px green solid', width: '80%' }}>
+        <section style={{ border: '1px green solid', width: '90%' }}>
           <h4>Platform</h4>
           <ul>
             <li>Freehand</li>
@@ -57,7 +57,7 @@ const Footer2 = () => {
             <li>Integrations</li>
           </ul>
         </section>
-        <section style={{ border: '1px green solid', width: '80%' }}>
+        <section style={{ border: '1px green solid', width: '90%' }}>
           <h4>Resorces</h4>
           <ul>
             <li>Blog</li>
@@ -70,7 +70,7 @@ const Footer2 = () => {
             <li>Marketplace</li>
           </ul>
         </section>
-        <div style={{ width: '80%', marginBottom: -15, marginTop: 30 }}>
+        <div style={{ width: '90%', marginBottom: -15, marginTop: 30 }}>
           <h4>Recent News</h4>
         </div>
         <img
@@ -96,6 +96,7 @@ const Footer2 = () => {
           <span>
             <strong>Meet the new InVision mobile app:</strong>
             <span style={{ color: 'RGBA(162, 164, 170, 1.00)' }}>
+              {' '}
               Now with studio mirroring and freehand to help you design better
               faster, together-on the go.
             </span>
