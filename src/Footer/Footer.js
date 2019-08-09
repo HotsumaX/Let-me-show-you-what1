@@ -25,7 +25,7 @@ const Footer2 = () => {
         }}
       >
         <div style={{ width: '90%', marginTop: 30, marginBottom: 20 }}>
-          inVision image
+          inVision image will go here
         </div>
         <section style={{ border: '1px green solid', width: '90%' }}>
           <h4>Contact</h4>
